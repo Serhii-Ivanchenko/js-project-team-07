@@ -2,25 +2,36 @@
   <div class="container header-container">
     <!-- <p>Header</p> -->
     <nav class="header-nav">
-      <div class="logo-box">
-        <img
-          class="logo-photo"
-          src="../img/logo_photo/logo_photo_1x.webp"
-          alt="logo-photo"
-          width="80"
-          height="80"
-        />
-        <a class="header-logo" href="../index.html">
-          <svg class="header-icon" width="84" height="19">
-            <use href="../img/icons.svg#icon-logo"></use>
+      <div class="logo-menu-box">
+        <div class="logo-box">
+          <img
+            class="logo-photo"
+            src="../img/logo_photo/logo_photo_1x.webp"
+            alt="logo-photo"
+            width="80"
+            height="80"
+          />
+          <a class="header-logo" href="../index.html">
+            <svg class="header-icon" width="84" height="19">
+              <use href="../img/icons.svg#icon-logo"></use>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Mobile burger menu  -->
+        <button type="button" class="open-mobile-menu" aria-label="Open menu">
+          <svg class="open-menu-icon" width="28" height="28">
+            <use href="../img/icons.svg#icon-mobile-menu"></use>
           </svg>
-        </a>
+        </button>
+        <!--      -->
       </div>
 
       <div class="menu">
         <p class="menu-title">Menu</p>
+        <div class="line"></div>
 
-        <ul class="menu-list">
+        <ul class="menu-list visually-hidden">
           <li class="menu-list-item">
             <a href="">About me</a>
           </li>
@@ -39,13 +50,33 @@
       <div class="order-project-btn">
         <a href="" class="order-project-link">Order the project</a>
       </div>
-
-      <!-- Mobile burger menu  -->
-      <button type="button" class="open-mobile-menu" aria-label="Open menu">
-        <svg class="open-menu-icon" width="28" height="28">
-          <use href="../img/icons.svg#icon-mobile-menu"></use>
-        </svg>
-      </button>
     </nav>
   </div>
 </header>
+
+<!-- Mobile menu -->
+<div class="mobile-menu">
+  <button type="button" class="close-menu menu-close" aria-label="Close menu">
+    <svg class="close-menu-icon" width="40" height="40">
+      <use href="./img/icons.svg#"></use>
+    </svg>
+  </button>
+
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item menu-close">
+      <a class="mobile-menu-link" href="">About me</a>
+    </li>
+    <li class="mobile-menu-item menu-close">
+      <a class="mobile-menu-link" href="">Benefits</a>
+    </li>
+    <li class="mobile-menu-item menu-close">
+      <a class="mobile-menu-link" href="">Projects</a>
+    </li>
+    <li class="mobile-menu-item menu-close">
+      <a class="mobile-menu-link" href="">FAQ</a>
+    </li>
+  </ul>
+  <div class="order-project-btn">
+    <a href="" class="order-project-link">Order the project</a>
+  </div>
+</div>
