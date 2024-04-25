@@ -12,13 +12,10 @@
                 d="M13.333 24l-8-8 8-8"></path>
         </symbol>
         <symbol id="icon-arrow-right" viewBox="0 0 32 32">
-            <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4706"
-                d="M16 0.235c8.707 0 15.765 7.058 15.765 15.765s-7.058 15.765-15.765 15.765c-8.707 0-15.765-7.058-15.765-15.765s7.058-15.765 15.765-15.765z">
-            </path>
-            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="0.9412"
-                d="M10.98 16h10.039"></path>
-            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="0.9412"
-                d="M17.255 12.235l3.765 3.765-3.765 3.765"></path>
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2"
+                d="M5.333 16h21.333"></path>
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2"
+                d="M18.667 8l8 8-8 8"></path>
         </symbol>
         <symbol id="icon-arrow-up" viewBox="0 0 32 32">
             <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.2"
