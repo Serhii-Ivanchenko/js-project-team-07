@@ -5,6 +5,10 @@
       <div class="logo-menu-box">
         <div class="logo-box">
           <img
+            srcset="
+              ../img/logo_photo/logo_photo_1x.webp 1x,
+              ../img/logo_photo/logo_photo_2x.webp 2x
+            "
             class="logo-photo"
             src="../img/logo_photo/logo_photo_1x.webp"
             alt="logo-photo"
@@ -29,7 +33,6 @@
 
       <div class="menu">
         <p class="menu-title">Menu</p>
-        <div class="line"></div>
 
         <ul class="menu-list visually-hidden">
           <li class="menu-list-item">
@@ -54,11 +57,12 @@
   </div>
 </header>
 
-<!-- Mobile menu -->
+<!-- Mobile menu     -->
 <div class="mobile-menu">
+  <!-- is open -->
   <button type="button" class="close-menu menu-close" aria-label="Close menu">
-    <svg class="close-menu-icon" width="40" height="40">
-      <use href="./img/icons.svg#"></use>
+    <svg class="close-menu-icon" width="28" height="28">
+      <use href="../img/icons.svg#icon-close"></use>
     </svg>
   </button>
 
@@ -76,7 +80,7 @@
       <a class="mobile-menu-link" href="">FAQ</a>
     </li>
   </ul>
-  <div class="order-project-btn">
-    <a href="" class="order-project-link">Order the project</a>
+  <div class="order-project-mobm">
+    <a href="" class="order-mobm">Order the project</a>
   </div>
 </div>
