@@ -1,0 +1,232 @@
+@media screen and (min-width: 768px) {
+  .section.footer-section {
+    padding-top: 80px;
+    padding-bottom: 169px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container.footer-container {
+    padding-left: 196px;
+    padding-right: 196px;
+  }
+}
+
+.footer-wrapper {
+  width: 267px;
+  margin-bottom: 63px;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-wrapper {
+    width: 542px;
+    margin-bottom: 64px;
+  }
+}
+
+.footer-image {
+  border-radius: 12px;
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-image {
+    border-radius: 24px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.footer-title {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-title {
+    font-size: 64px;
+  }
+}
+
+.footer-title-elem {
+  margin-left: 52px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-title-elem {
+    margin-left: 90px;
+  }
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 64px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-form {
+    flex-direction: row;
+    gap: 32px;
+    margin-bottom: 18px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer-form {
+    gap: 0;
+  }
+}
+
+.footer-input-email,
+.footer-input-comments {
+  width: 100%;
+  background-color: transparent;
+  padding-bottom: 20px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(250, 250, 250, 0.2);
+  color: #fafafa;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+}
+
+.footer-input-email:focus,
+.footer-input-comments:focus {
+  outline: none;
+  border-bottom-color: rgba(250, 250, 250, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+  .footer-input-email,
+  .footer-input-comments {
+    width: 245px;
+    height: 44px;
+    padding-top: 46px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer-input-email,
+  .footer-input-comments {
+    width: 390px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer-input-email {
+    margin-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer-input-comments {
+    margin-right: 86px;
+  }
+}
+
+.footer-input-email::placeholder,
+.footer-input-comments::placeholder {
+  color: rgba(250, 250, 250, 0.6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+}
+
+.footer-input-email {
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-input-email {
+    margin-bottom: 0;
+  }
+}
+
+.footer-input-comments {
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-input-comments {
+    margin-bottom: 0;
+  }
+}
+
+.footer-btn {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ed3b44;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.02em;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-btn {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.footer-btn:hover {
+  background-color: #e0373f;
+}
+
+.footer-adress {
+  display: flex;
+  gap: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-adress {
+    gap: 8px;
+  }
+}
+
+.footer-adress-email,
+.footer-adress-tel {
+  display: flex;
+  padding: 10px 12px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.02em;
+  border-radius: 60px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+@media screen and (min-width: 768px) {
+  .footer-adress-email,
+  .footer-adress-tel {
+    padding: 18px 32px;
+    font-size: 16px;
+  }
+}
+
+.footer-adress-email:hover,
+.footer-adress-tel:hover {
+  border: 1px solid #fafafa;
+}
