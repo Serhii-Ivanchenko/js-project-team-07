@@ -1,0 +1,142 @@
+.hero-container {
+    padding-left: 0;
+    padding-right: 0;
+    /* margin: 0 16px; */
+}
+/* @media only screen and (min-width: 768px) {
+    .hero-container {
+        margin-left: 32px;
+    }
+} */
+
+@media only screen and (min-width: 1440px) {
+    .hero-container {
+        margin-left: 172px;
+        /* margin-right: 32px; */
+}
+}
+
+.hero-section {
+    background-image: url(../img/hero/Gradient_mobile_1x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+@media only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+    .hero-section {
+        background-image: url(../img/hero/Gradient_mobile_2x.png);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-section {
+        background-image: url(../img/hero/Gradient_tablet_1x.png);
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .hero-section {
+        background-image: url(../img/hero/Gradient_tablet_2x.png);
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .hero-section {
+        background-image: url(../img/hero/Gradient_desktop_1x.png);
+        padding-bottom: 32px;
+    }
+}
+
+@media only screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+    .hero-section {
+        background-image: url(../img/hero/Gradient_desktop_2x.png);
+    }
+}
+
+.hero-name {
+    max-width: 343px;
+    margin-bottom: 212px;
+    /* margin-left: 16px;
+    margin-right: 16px; */
+    margin-top: 281px;
+    color: #FAFAFA;
+    font-family: "Inter Tight";
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-name {
+        max-width: 632px;
+        font-size: 90px;
+        line-height: 1;
+        margin-bottom: 187px;
+        margin-top: 300px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .hero-name {
+        max-width: 1084px;
+        margin-bottom: 243px;
+    }
+}
+
+.hero-social-list {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+@media only screen and (min-width: 768px) {
+    .hero-social-list {
+        /* margin-right: 32px; */
+        gap: 8px;
+    }
+}
+
+
+.hero-social-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FAFAFA;
+    font-family: "Inter Tight";
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    border-radius: 60px;
+    border: 1px solid rgba(250, 250, 250, 0.20);
+    width: 37px;
+    height: 37px;
+
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-social-item {
+        font-size: 16px;
+        line-height: normal;
+        width: 55px;
+        height: 55px;
+    }
+}
+
+.hero-email {
+    width: 178px;
+    padding: 10px 12px;
+}
+@media only screen and (min-width: 768px) {
+    .hero-email {
+        width: 225px;
+        padding: 18px 24px;
+    }
+}
