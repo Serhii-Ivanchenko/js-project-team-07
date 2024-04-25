@@ -1,15 +1,16 @@
 <header class="header">
-  <div class="container">
+  <div class="container header-container">
     <!-- <p>Header</p> -->
     <nav class="header-nav">
       <div class="logo-box">
+        <img
+          class="logo-photo"
+          src="../img/logo_photo/logo_photo_1x.webp"
+          alt="logo-photo"
+          width="80"
+          height="80"
+        />
         <a class="header-logo" href="../index.html">
-          <img
-            src="../img/logo_photo/logo_photo_1x.webp"
-            alt="logo-photo"
-            width="80"
-            height="80"
-          />
           <svg class="header-icon" width="84" height="19">
             <use href="../img/icons.svg#icon-logo"></use>
           </svg>
@@ -17,9 +18,9 @@
       </div>
 
       <div class="menu">
-        <p>Menu</p>
+        <p class="menu-title">Menu</p>
 
-        <ul class="menu-list visually-hidden">
+        <ul class="menu-list">
           <li class="menu-list-item">
             <a href="">About me</a>
           </li>
@@ -35,12 +36,14 @@
         </ul>
       </div>
 
-      <a href="" class="order-project-link">Order the project</a>
+      <div class="order-project-btn">
+        <a href="" class="order-project-link">Order the project</a>
+      </div>
 
       <!-- Mobile burger menu  -->
-      <button type="button" class="open-mobile-menu">
-        <svg class="open-menu-btn">
-          <use href="../img/icons.svg#"></use>
+      <button type="button" class="open-mobile-menu" aria-label="Open menu">
+        <svg class="open-menu-icon" width="28" height="28">
+          <use href="../img/icons.svg#icon-mobile-menu"></use>
         </svg>
       </button>
     </nav>
