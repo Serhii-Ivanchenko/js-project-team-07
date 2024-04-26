@@ -1,5 +1,88 @@
 <header class="header">
-<div class="container">
-    <p>Header</p>
-</div>
+  <div class="container header-container">
+    <!-- <p>Header</p> -->
+    <nav class="header-nav">
+      <div class="logo-menu-box">
+        <div class="logo-box">
+          <img
+            srcset="
+              ../img/logo_photo/logo_photo_1x.webp 1x,
+              ../img/logo_photo/logo_photo_2x.webp 2x
+            "
+            class="logo-photo"
+            src="../img/logo_photo/logo_photo_1x.webp"
+            alt="logo-photo"
+            width="80"
+            height="80"
+          />
+          <a class="header-logo" href="../index.html">
+            <svg class="header-icon" width="84" height="19">
+              <use href="../img/icons.svg#icon-logo"></use>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Mobile burger menu  -->
+        <button type="button" class="open-mobile-menu" aria-label="Open menu">
+          <svg class="open-menu-icon" width="28" height="28">
+            <use href="../img/icons.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
+        <!--      -->
+      </div>
+
+      <div class="menu">
+        <p class="menu-title">Menu</p>
+
+        <ul class="menu-list visually-hidden">
+          <li class="menu-list-item">
+            <a href="#about-me">About me</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="#benefits">Benefits</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="questions">FAQ</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="order-project-btn">
+        <a href="#work-together" class="order-project-link"
+          >Order the project</a
+        >
+      </div>
+    </nav>
+  </div>
 </header>
+
+<!-- Mobile menu     -->
+<div class="mobile-menu">
+  <!-- is open -->
+  <button type="button" class="close-menu menu-close" aria-label="Close menu">
+    <svg class="close-menu-icon" width="28" height="28">
+      <use href="../img/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item menu-close">
+      <a class="mobile-menu-link" href="#about-me">About me</a>
+    </li>
+    <li class="mobile-menu-item menu-close">
+      <a class="mobile-menu-link" href="#benefits">Benefits</a>
+    </li>
+    <li class="mobile-menu-item menu-close">
+      <a class="mobile-menu-link" href="#projects">Projects</a>
+    </li>
+    <li class="mobile-menu-item menu-close">
+      <a class="mobile-menu-link" href="#questions">FAQ</a>
+    </li>
+  </ul>
+  <div class="order-project-mobm">
+    <a href="#work-together" class="order-mobm">Order the project</a>
+  </div>
+</div>
