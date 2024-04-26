@@ -37,7 +37,7 @@
 .projects-tech-list {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
   flex-wrap: wrap;
 
   color: #1c1d20;
@@ -64,7 +64,7 @@
 }
 
 .projects-tech-item {
-  padding: 13px 18px;
+  padding: 12px 17px;
 
   line-height: normal;
 
@@ -74,7 +74,7 @@
 
 @media only screen and (min-width: 768px) {
   .projects-tech-item {
-    padding: 18px 18px;
+    padding: 17px 17px;
   }
 }
 
@@ -98,10 +98,18 @@
 }
 
 .projects-slide-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 141px;
+  height: 45px;
+  padding: 13px 32px;
   border-radius: 60px;
   background: #ed3b44;
+  color: #FAFAFA;
+  letter-spacing: -0.02em;
 
-  padding: 13px 32px;
+
 }
 
 .projects-slide-link:hover,
@@ -112,6 +120,8 @@
 @media only screen and (min-width: 768px) {
   .projects-slide-link {
     padding: 18px 50px;
+    width: 177px;
+    height: 55px;
   }
 }
 
