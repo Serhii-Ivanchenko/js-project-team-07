@@ -4,9 +4,10 @@ const openBtn = document.querySelector(".open-mobile-menu");
 const closeBtn = document.querySelector(".close-menu");
 const mobMenu = document.querySelector(".mobile-menu");
 const mobMenuList = document.querySelector(".mobile-menu-list");
-const orderProject = document.querySelector(".order-project-mobm")
+const orderProject = document.querySelector(".order-project-mobm");
 
 menu.addEventListener("click", handleClick);
+menuList.addEventListener("click", handleClick);
 
 function handleClick() {
     menuList.classList.toggle("hidden");
