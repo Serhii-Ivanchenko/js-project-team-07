@@ -2,23 +2,20 @@
     padding-left: 16px;
     padding-right: 16px;
 }
+
 @media only screen and (min-width: 768px) {
     .hero-container {
         width: 768px;
         padding-left: 32px;
         padding-right: 32px;
-        margin-left: 0;
-        margin-right: 0;
-        
     }
 }
 
 @media only screen and (min-width: 1440px) {
     .hero-container {
-        margin-left: 172px;
         width: 1440px;
         padding: 0 32px;
-}
+    }
 }
 
 .hero-section {
@@ -34,8 +31,6 @@
 @media only screen and (max-width: 767px) and (min-resolution: 192dpi) {
     .hero-section {
         background-image: url(../img/hero/Gradient_mobile_2x.png);
-        padding-top: 32px;
-        padding-bottom: 32px;
     }
 }
 
@@ -43,6 +38,8 @@
     .hero-section {
         background-image: url(../img/hero/Gradient_tablet_1x.png);
         height: 1024px;
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 }
 
@@ -56,6 +53,7 @@
     .hero-section {
         background-image: url(../img/hero/Gradient_desktop_1x.png);
         padding-bottom: 32px;
+        padding-top: 32px;
         height: 900px;
     }
 }
@@ -91,8 +89,8 @@
     .hero-name {
         max-width: 1084px;
         margin-bottom: 243px;
-        /* margin-left: auto;
-        margin-right: auto; */
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -103,6 +101,7 @@
     justify-content: flex-end;
     margin-left: auto;
 }
+
 @media only screen and (min-width: 768px) {
     .hero-social-list {
         gap: 8px;
@@ -122,6 +121,7 @@
     border: 1px solid rgba(250, 250, 250, 0.20);
     width: 37px;
     height: 37px;
+    transition: transform 0.3s ease;
 }
 
 @media only screen and (min-width: 768px) {
@@ -137,9 +137,25 @@
     width: 178px;
     padding: 10px 12px;
 }
+
 @media only screen and (min-width: 768px) {
     .hero-email {
         width: 225px;
         padding: 18px 24px;
+    }
+}
+
+/* @media (max-width: 367.98px) {
+
+    .hero-social-item,
+    .hero-social-item a {
+        transform: scale(0.95);
+    }
+} */
+
+@media (max-width: 367.98px) {
+.hero-social-list {
+       flex-wrap: wrap;
+    justify-content: center;
     }
 }
