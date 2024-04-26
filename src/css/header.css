@@ -19,8 +19,6 @@
 .logo-menu-box{
     display: inline-flex;
     align-items: center;
-    /* justify-content: space-between; */
-    /* gap: 143px;    */
     flex-shrink: 0;
 }
 
@@ -33,7 +31,6 @@
 
 .header-nav{
     position: relative;
-    /* justify-content: space-between; */
 }
 
 @media only screen and (min-width: 768px) {
@@ -60,11 +57,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-right: 151px; */
   }
 
   .menu-title{
-    margin-bottom: 16px;
+    margin-bottom: 18px;
 
     font-size: 16px;
         font-weight: 500;
@@ -102,7 +98,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
 
         font-size: 16px;
         font-weight: 500;
@@ -111,11 +106,6 @@
   }
 }
 
-/* @media only screen and (min-width: 1440px) {
-.menu {
-    margin-right: 487px;
-  }
-} */
 
 
 /* Mobile menu */
@@ -125,18 +115,17 @@
      right: 0;
      width: 100%;
      height: 100%;
-     /* background: #bea69e; */
+
     background-color: #1C1D20 ;
      background-image: url(../img/hero/Gradient_mobile_menu_1x.png);
      background-repeat: no-repeat;
-     background-size: contain;
+     background-size: cover;
      
      display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: center;
-     /* padding-top: 302px;
-     padding-left: 119px; */
+
      z-index: 6;
      transform: translateX(100%);
      transition: transform 400ms ease-in;
