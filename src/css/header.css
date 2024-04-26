@@ -1,0 +1,193 @@
+
+.header-icon{
+    fill: #FAFAFA;
+}
+
+.open-menu-icon{
+    stroke: #FAFAFA;
+   
+}
+.logo-box{
+ display: inline-flex;
+    flex-direction: row;
+    gap: 8px;
+
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.logo-menu-box{
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+
+.open-mobile-menu{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.header-nav{
+    position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+
+.header-nav {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    
+.open-mobile-menu {
+    display: none;
+  }
+}
+
+
+
+.menu, .order-project-link{
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-title{
+    margin-bottom: 18px;
+
+    font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.02em;
+        position: relative;
+        border-bottom: 2px solid #FAFAFA;
+  }
+
+  .menu-list{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .menu-list-item{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.02em;
+  }
+
+  .order-project-link{
+    display: flex;
+  }
+
+  .order-project-btn{
+    min-width: 163px;
+    height: 55px;
+
+    background-color: #ED3B44;
+    border-radius: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+        font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.02em;
+  }
+}
+
+
+
+/* Mobile menu */
+ .mobile-menu {
+     position: fixed;
+     top: 0;
+     right: 0;
+     width: 100%;
+     height: 100%;
+
+    background-color: #1C1D20 ;
+     background-image: url(../img/hero/Gradient_mobile_menu_1x.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+
+     z-index: 6;
+     transform: translateX(100%);
+     transition: transform 400ms ease-in;
+ }
+
+ .is-open{
+    transform: translateX(0);
+        visibility: visible;
+ }
+
+ @media (min-resolution: 192dpi){
+    .mobile-menu{
+        background-image: url(../img/hero/Gradient_mobile_menu_2x.png) ;
+    }
+ }
+
+  .close-menu-icon{
+    stroke: #FAFAFA;
+   
+ } 
+
+ .close-menu{
+   position: absolute;
+    top: 32px;
+    right: 16px; 
+ }
+
+ .mobile-menu-list{
+display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: auto;
+    margin-top: auto;
+    gap: 12px;
+ }
+
+ .mobile-menu-link{
+    font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.02em;
+        border-bottom: 2px solid #FAFAFA;
+ }
+
+ .order-project-mobm{
+    width: 163px;
+    height: 45px;
+
+    background-color: #ED3B44;
+    border-radius: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.02em;
+
+    margin-bottom: 78px;
+}
+ 
