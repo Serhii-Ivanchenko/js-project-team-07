@@ -144,10 +144,14 @@
 
   .close-menu-icon{
     stroke: #FAFAFA;
-    position: absolute;
+   
+ } 
+
+ .close-menu{
+   position: absolute;
     top: 32px;
     right: 16px; 
- } 
+ }
 
  .mobile-menu-list{
 display: flex;
