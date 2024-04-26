@@ -6,6 +6,7 @@ const accordions = Array.from(
   document.querySelectorAll('.accordion-container')
 );
 new Accordion(accordions, {
+  duration: 400,
   openOnInit: [0],
   showMultiple: true,
   onOpen: function (currentElement) {

@@ -83,32 +83,38 @@
     font-size: 38px;
   }
   .aboutme-header-img {
-    /* width: 704px; */
-    /* height: 700px; */
+    width: 704px;
+    height: 700px;
   }
 }
 
-
-.ac {
-  background-color: transparent !important;
+.accordion-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .aboutme-info-item {
-  margin-bottom: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #3b3b3b;
 }
 .aboutme-info-item:last-child {
-  margin-bottom: 0;
+  margin-bottom: 8px;
+}
+.aboutme-info-item.is-active {
+  /* padding-bottom: 0; */
+  /* margin-bottom: 0; */
 }
 
 .aboutme-info-header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 8px;
 }
 .aboutme-info-title {
   color: rgba(250, 250, 250, 0.4);
-  /* font-family: 'Inter Tight'; */
+
   font-size: 16px;
-  /* font-style: normal; */
   font-weight: 600;
   line-height: 150%;
   letter-spacing: -0.02em;
@@ -117,8 +123,9 @@
   cursor: pointer;
 }
 .aboutme-info-btn {
-  display: flex;
   padding: 10px;
+
+  display: flex;
   align-items: center;
   gap: 10px;
 
@@ -129,6 +136,8 @@
   height: 42px;
   cursor: pointer;
 }
+
+/* ac-panel ------------------------------------------*/
 .aboutme-info-text-list {
   display: flex;
   flex-direction: column;
@@ -136,20 +145,33 @@
 }
 .aboutme-info-text {
   color: #fafafa;
-
-  /* Mobile/Main text */
-  /* font-family: 'Inter Tight'; */
   font-size: 16px;
-  /* font-style: normal; */
-  /* font-weight: 500; */
-  line-height: 150%;
-  letter-spacing: -0.02px;
+  font-weight: 500;
+  /* line-height: 150%; */
+  /* letter-spacing: -0.02px; */
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.32px;
 
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
+}
+@media only screen and (min-width: 768px) {
+  .aboutme-info-text {
+    /* margin-bottom: 32px; */
+  }
 }
 @media only screen and (min-width: 1440px) {
+  .aboutme-info {
+    width: 1440px;
+  }
+  .aboutme-info-item.is-active {
+    /* padding-bottom: 0; */
+    /* margin-bottom: 0; */
+    /* padding-bottom: 32px; */
+  }
   .aboutme-info-text {
-    padding-left: 696px;
+    width: 612px;
+    margin-left: 696px;
+    /* padding-right: 68px; */
   }
 }
 .aboutme-skills-swiper {
@@ -179,12 +201,7 @@
   align-items: center;
 
   color: #fafafa;
-
-  /* Desktop_tablet/Main text */
-  /* font-family: 'Inter Tight'; */
   font-size: 16px;
-  /* font-style: normal; */
-  /* font-weight: 500; */
   line-height: 150%;
   letter-spacing: -0.02em;
 }
@@ -223,17 +240,10 @@
 
 @media only screen and (min-width: 1440px) {
   .aboutme-skills-swiper {
-    width: 1364px;
+    /* width: 1364px; */
+    width: 1312px;
   }
   .aboutme-skills {
     width: 1200px;
   }
 }
-
-/* .swiper {
-  width: 111px;
-  height: 30px;
-}
-.swiper-button-next {
-  color: #fff;
-} */
