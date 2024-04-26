@@ -1,5 +1,5 @@
 import './js/about-me';
-import './js/accordion.js';
+// import './js/accordion.js';
 import './js/benefits.js';
 import './js/covers.js';
 import './js/faq.js';
