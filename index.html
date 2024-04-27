@@ -7,9 +7,9 @@
     <title>jefferson*</title>
     
     <script type="module" crossorigin src="/js-project-team-07/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/js-project-team-07/assets/vendor-9d13f247.js">
+    <link rel="modulepreload" crossorigin href="/js-project-team-07/assets/vendor-903eadcf.js">
     <link rel="stylesheet" href="/js-project-team-07/assets/vendor-1f9fe898.css">
-    <link rel="stylesheet" href="/js-project-team-07/assets/index-f4799267.css">
+    <link rel="stylesheet" href="/js-project-team-07/assets/index-b37d23e2.css">
   </head>
   <body>
     <!-- header -->
@@ -131,11 +131,166 @@
   </div>
 </section>
 
-      <section class="section">
-<div class="container">
-    <h2>About me</h2>
-</div>
+      <section id="aboutme" class="section aboutme">
+  <h2 class="visually-hidden">About me</h2>
+  <div class="container">
+    <ul class="aboutme-header">
+      <li class="aboutme-header-item">
+        <p class="aboutme-header-title">
+          I work with people all over the world to create impressive and
+          <span class="accent">functional </span>
+          <span class="aboutme-title-websites">websites </span> that reflect
+          each client's unique personality.
+        </p>
+      </li>
+      <li class="aboutme-header-item">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ../img/about_me/about_me_photo_1x.webp 1x,
+              ../img/about_me/about_me_photo_2x.webp 2x
+            "
+          />
+          <source
+            media="(min-width: 375px)"
+            srcset="
+              ../img/about_me/about_me_photo_mobile_1x.webp 1x,
+              ../img/about_me/about_me_photo_mobile_2x.webp 2x
+            "
+          />
+          <img
+            class="aboutme-header-img"
+            src="../img/about_me/about_me_photo_mobile_1x.webp"
+            loading="lazy"
+            alt="IchBin"
+          />
+        </picture>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container aboutme-info">
+    <div class="accordion-container">
+      <div class="ac aboutme-info-item">
+        <div class="ac-trigger">
+          <ul class="ac-header- aboutme-info-header">
+            <li class="aboutme-info-title">ABOUT ME</li>
+            <li class="aboutme-info-btn">
+              <svg class="aboutme-nav-btn">
+                <use href="../img/icons.svg#icon-arrow-up"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div class="ac-panel aboutme-info-text-list">
+          <!-- <p class="ac-text"> -->
+          <!-- <div class="ac-text"> -->
+          <!-- <ul class="aboutme-info-text-list"> -->
+          <!-- <li class="aboutme-info-text"> -->
+          <p class="ac-text aboutme-info-text">
+            I am Lloyd Jefferson, a talented programmer with extensive expertise
+            in software development. I have an understanding of different
+            programming languages ​​and technologies, always ready to improve my
+            skills. I always follow the latest trends and look for
+            unconventional, creative solutions to problems. I have a high level
+            of analytical skills and am able to effectively solve even the most
+            difficult tasks encountered on the way.
+          </p>
+          <!-- </li> -->
+          <!-- <li class="aboutme-info-text"> -->
+          <p class="ac-text aboutme-info-text">
+            Able to work both independently and in a team. I can effectively
+            cooperate with colleagues, exchanging ideas and finding optimal
+            solutions. Professional maturity allows you to calmly cope with
+            challenges and stressful situations, while maintaining a high
+            quality of work. I am always looking for opportunities for
+            self-improvement. I actively study new technologies and practices to
+            stay abreast of the latest innovations. I have a strong
+            understanding of various programming languages, frameworks and
+            architectural concepts that allow me to create efficient and
+            scalable software.
+          </p>
+          <!-- </li> -->
+          <!-- </ul> -->
+          <!-- </div> -->
+        </div>
+      </div>
+
+      <div class="ac aboutme-info-item">
+        <!-- <h2 class="ac-header">
+          <button type="button" class="ac-trigger">role</button>
+        </h2> -->
+        <div class="ac-trigger">
+          <ul class="ac-header- aboutme-info-header">
+            <li class="aboutme-info-title">ROLE</li>
+            <li class="aboutme-info-btn">
+              <svg class="aboutme-nav-btn">
+                <use href="../img/icons.svg#icon-arrow-down"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div class="ac-panel aboutme-info-text-list">
+          <!-- <ul class="aboutme-info-text-list">
+            <li class="ac-text aboutme-info-text">Frontend development</li>
+            <li class="ac-text aboutme-info-text">HeadlessCMS,Wordpress</li>
+            <li class="ac-text aboutme-info-text">Blender(enjoy)</li>
+          </ul> -->
+          <p class="ac-text aboutme-info-text">Frontend development</p>
+          <p class="ac-text aboutme-info-text">HeadlessCMS,Wordpress</p>
+          <p class="ac-text aboutme-info-text">Blender(enjoy)</p>
+        </div>
+      </div>
+
+      <div class="ac aboutme-info-item">
+        <!-- <h2 class="ac-header">
+          <button type="button" class="ac-trigger">education</button>
+        </h2> -->
+        <div class="ac-trigger">
+          <ul class="ac-header- aboutme-info-header">
+            <li class="aboutme-info-title">EDUCATION</li>
+            <li class="aboutme-info-btn">
+              <svg class="aboutme-nav-btn">
+                <use href="../img/icons.svg#icon-arrow-down"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+
+        <div class="ac-panel aboutme-info-text-list">
+          <p class="ac-text aboutme-info-text">
+            2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
+          </p>
+          <p class="ac-text aboutme-info-text">
+            2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
+            New York
+          </p>
+          <p class="ac-text aboutme-info-text">
+            2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="aboutme-skills-swiper">
+      <ul class="aboutme-skills">
+        <li class="aboutme-skill skill-accent">HTML/CSS</li>
+        <li class="aboutme-skill">JavaScript</li>
+        <li class="aboutme-skill">React</li>
+        <li class="aboutme-skill">Node.js</li>
+        <li class="aboutme-skill">React Native</li>
+        <li class="aboutme-skill">Soft scills</li>
+      </ul>
+      <svg class="aboutme-skill-next">
+        <use href="../img/icons.svg#icon-arrow-right"></use>
+      </svg>
+    </div>
+  </div>
 </section>
+
       <section class="section benefits-section" id="benefits">
   <div class="container benefits-main-container">
     <h2 class="benefits-title">BENEFITS OF WORKING WITH ME</h2>
