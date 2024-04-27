@@ -1,0 +1,249 @@
+/* width: 552px; */
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.aboutme-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.aboutme-header-item {
+  width: 343px;
+  height: 500px;
+  border-radius: 24px;
+  background: #242527;
+}
+
+.aboutme-header-title {
+  padding-top: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+
+  color: #fafafa;
+
+  /* font-family: 'Inter Tight'; */
+  font-size: 24px;
+  /* font-style: normal; */
+  /* font-weight: 500; */
+  line-height: 116.6%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 768px) {
+  .aboutme {
+    gap: 64px;
+  }
+  .aboutme-header-item {
+    width: 704px;
+    height: 700px;
+  }
+  .aboutme-header-title {
+    padding-top: 64px;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  .aboutme-header-title {
+    font-size: 38px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .aboutme {
+    gap: 96px;
+  }
+  .aboutme-header {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .aboutme-header-item {
+    width: 680px;
+    height: 700px;
+  }
+}
+
+/* .aboutme-title-function {
+  color: #ed3b44;
+} */
+
+.aboutme-title-websites {
+  color: rgba(250, 250, 250, 0.4);
+}
+.aboutme-header-img {
+  /* width: 343px; */
+  /* height: 500px; */
+  /* object-fit: fill; */
+  /* object-fit: cover; */
+}
+
+@media only screen and (min-width: 768px) {
+  .aboutme-title {
+    font-size: 38px;
+  }
+  .aboutme-header-img {
+    width: 704px;
+    height: 700px;
+  }
+}
+
+.accordion-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.aboutme-info-item {
+  padding-bottom: 32px;
+  border-bottom: 1px solid #3b3b3b;
+}
+.aboutme-info-item:last-child {
+  margin-bottom: 8px;
+}
+.aboutme-info-item.is-active {
+  /* padding-bottom: 0; */
+  /* margin-bottom: 0; */
+}
+
+.aboutme-info-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.aboutme-info-title {
+  color: rgba(250, 250, 250, 0.4);
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+.aboutme-info-btn {
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 100px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+}
+
+/* ac-panel ------------------------------------------*/
+.aboutme-info-text-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.aboutme-info-text {
+  color: #fafafa;
+  font-size: 16px;
+  font-weight: 500;
+  /* line-height: 150%; */
+  /* letter-spacing: -0.02px; */
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.32px;
+
+  /* margin-bottom: 10px; */
+}
+@media only screen and (min-width: 768px) {
+  .aboutme-info-text {
+    /* margin-bottom: 32px; */
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .aboutme-info {
+    width: 1440px;
+  }
+  .aboutme-info-item.is-active {
+    /* padding-bottom: 0; */
+    /* margin-bottom: 0; */
+    /* padding-bottom: 32px; */
+  }
+  .aboutme-info-text {
+    width: 612px;
+    margin-left: 696px;
+    /* padding-right: 68px; */
+  }
+}
+.aboutme-skills-swiper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 343px;
+}
+.aboutme-skills {
+  display: flex;
+  overflow: hidden;
+  width: 260px;
+}
+.aboutme-skill {
+  width: 130px;
+  height: 130px;
+
+  display: flex;
+  flex-shrink: 0;
+
+  border-radius: 100px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+
+  stroke-width: 1px;
+  stroke: rgba(250, 250, 250, 0.2);
+  justify-content: center;
+  align-items: center;
+
+  color: #fafafa;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+}
+
+.skill-accent {
+  background-color: #ed3b44;
+}
+
+.aboutme-nav-btn,
+.aboutme-skill-next {
+  width: 42px;
+  height: 42px;
+  fill: none;
+  cursor: pointer;
+  stroke: #fafafa;
+}
+.aboutme-skill-next {
+  stroke: #3b3b3b;
+}
+
+@media only screen and (min-width: 768px) {
+  .aboutme-skills-swiper {
+    width: 704px;
+  }
+  .aboutme-skills {
+    width: 600px;
+  }
+  .aboutme-skill {
+    width: 200px;
+    height: 200px;
+  }
+  /* .aboutme-skill {
+    font-size: 20px;
+  } */
+}
+
+@media only screen and (min-width: 1440px) {
+  .aboutme-skills-swiper {
+    /* width: 1364px; */
+    width: 1312px;
+  }
+  .aboutme-skills {
+    width: 1200px;
+  }
+}
