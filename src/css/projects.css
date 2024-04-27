@@ -13,6 +13,10 @@
     display: flex;
     flex-direction: row;
   }
+
+  .projects-swiper-slide.swiper-slide {
+    display: flex;
+  }
 }
 
 .projects-white-side {
@@ -106,10 +110,8 @@
   padding: 13px 32px;
   border-radius: 60px;
   background: #ed3b44;
-  color: #FAFAFA;
+  color: #fafafa;
   letter-spacing: -0.02em;
-
-
 }
 
 .projects-slide-link:hover,
@@ -120,6 +122,7 @@
 @media only screen and (min-width: 768px) {
   .projects-slide-link {
     padding: 18px 50px;
+
     width: 177px;
     height: 55px;
   }
@@ -188,7 +191,7 @@
   border: 1px solid rgba(250, 250, 250, 0.2);
 
   fill: none;
-  stroke: #3b3b3b;
+  stroke: white;
 }
 
 @media only screen and (min-width: 768px) {
@@ -226,4 +229,8 @@
     width: 32px;
     height: 32px;
   }
+}
+
+.swiper-button-disabled {
+  stroke: #3b3b3b;
 }
