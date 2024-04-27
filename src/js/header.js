@@ -9,21 +9,6 @@ const menuListItem = document.querySelector('.menu-list-item');
 mobMenu.addEventListener('click', closeBtnClick);
 nav.addEventListener('click', onNavElementsClick);
 
-// menuBox.addEventListener("click", handleClick);
-// function handleClick(event) {
-//     if (event.target.nodeName === "DIV") {
-//         return;
-//     } else {
-//         menuList.classList.toggle("hidden");
-//     }
-// }
-
-// openBtn.addEventListener("click", openBtnClick)
-// function openBtnClick() {
-//     console.log('this is', event.target);
-//      mobMenu.classList.add("is-open");
-// }
-
 function closeBtnClick(event) {
   if (event.target.nodeName === 'DIV') {
     return;
