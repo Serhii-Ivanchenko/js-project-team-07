@@ -1,4 +1,4 @@
-<section class="section footer-section">
+<section class="section footer-section" id="work-together">
   <div class="container footer-container">
     <div class="footer-wrapper">
       <img
@@ -17,20 +17,23 @@
     </div>
 
     <form class="footer-form">
-      <input
-        class="footer-input-email"
-        type="email"
-        name="email"
-        id="footer-email"
-        placeholder="clients@gmail.com"
-        pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
-      />
+      <div class="footer-form-wrapper">
+        <input
+          class="footer-input-email"
+          type="email"
+          name="email"
+          placeholder="clients@gmail.com"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          required
+        />
+        <p class="input-error-message"></p>
+      </div>
       <input
         class="footer-input-comments"
         type="text"
         name="comments"
-        id="footer-comments"
         placeholder="comments"
+        required
       />
       <button type="submit" class="footer-btn">Send</button>
     </form>
@@ -45,3 +48,15 @@
     </address>
   </div>
 </section>
+
+<div class="footer-backdrop">
+  <div class="modal-window">
+    <h3 class="modal-window-header"></h3>
+    <p class="modal-window-text"></p>
+    <button class="modal-close-btn" type="button">
+      <svg class="modal-close-btn-img" width="22" height="22">
+        <use href="../img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+</div>
