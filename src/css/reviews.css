@@ -1,9 +1,9 @@
-.rewiews-conteiner {
-    /* display: flex;
+/* .rewiews-conteiner {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 32px; */
-}
+    gap: 32px;
+} */
 
 .reviews-list {
     display: flex;
@@ -50,9 +50,26 @@
     letter-spacing: -0.32px;
 }
 
-.rewiews-list-div {
+.rewiews-list-wrapper {
     margin-top: 32px;
     margin-bottom: 32px;
+}
+
+.reviews-list li:nth-child(1n+5) {
+    display: none;
+}
+
+
+@media only screen and (max-width: 767.98px) {
+    .reviews-list li:nth-child(1n+2) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1439.98px) {
+    .reviews-list li:nth-child(1n+3) {
+        display: none;
+    }
 }
 
 .rewiews-list-element {
@@ -87,7 +104,7 @@
     color: rgba(250, 250, 250, 0.60);
 }
 
-.rewiews-button-div {
+.rewiews-button-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,18 +137,20 @@
     }   
 }
 
-.forward-button {
-    /* stroke: #3b3b3b; */
-    /* border: 1px solid rgba(250, 250, 250, 0.2); */
-}
+/* .forward-button {
+    stroke: #3B3B3B;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+} */
 
 .back-button {
-    /* stroke: white; */
-}
+    stroke: #3B3B3B;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+} 
 
 .rewiews-button-icon {
     width: 24px;
     height: 24px;
+    stroke: white;
 }
 
 @media screen and (min-width: 768px) {
