@@ -21,7 +21,7 @@
 @media screen and (min-width: 768px) {
   .footer-wrapper {
     width: 542px;
-    margin-bottom: 64px;
+    margin-bottom: 18px;
   }
 }
 
@@ -97,6 +97,7 @@
 @media screen and (min-width: 768px) {
   .footer-form-wrapper {
     margin-bottom: 0;
+    margin-top: 46px;
   }
 }
 
@@ -140,11 +141,22 @@
 }
 
 @media screen and (min-width: 768px) {
-  .footer-form-wrapper,
+  .footer-input-email,
   .footer-input-comments {
     width: 245px;
     height: 44px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-input-comments {
     margin-top: 46px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-form-wrapper {
+    width: 245px;
   }
 }
 
@@ -152,11 +164,13 @@
   .footer-input-email,
   .footer-input-comments {
     width: 390px;
+    height: 44px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .footer-input-email {
+  .footer-form-wrapper {
+    width: 390px;
     margin-right: 32px;
   }
 }
