@@ -1,5 +1,62 @@
-<section class="section">
-  <div class="container">
-    <h2>Work together</h2>
+<section class="section footer-section" id="work-together">
+  <div class="container footer-container">
+    <div class="footer-wrapper">
+      <img
+        class="footer-image"
+        srcset="
+          ../img/logo_photo/logo_photo_1x.webp 1x,
+          ../img/logo_photo/logo_photo_2x.webp 2x
+        "
+        src="../img/logo_photo/logo_photo_1x.webp"
+        alt="Jefferson`s photo"
+      />
+      <h2 class="footer-title">
+        <span class="footer-title-elem">Let’s</span>
+        <span class="accent">work</span> together
+      </h2>
+    </div>
+
+    <form class="footer-form">
+      <div class="footer-form-wrapper">
+        <input
+          class="footer-input-email"
+          type="email"
+          name="email"
+          placeholder="clients@gmail.com"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          required
+        />
+        <p class="input-error-message"></p>
+      </div>
+      <input
+        class="footer-input-comments"
+        type="text"
+        name="comments"
+        placeholder="comments"
+        required
+      />
+      <button type="submit" class="footer-btn">Send</button>
+    </form>
+
+    <address class="footer-adress">
+      <a class="footer-adress-email" href="mailto:lloydjefferson@gmail.com"
+        >lloydjefferson@gmail.com</a
+      >
+      <a class="footer-adress-tel" href="tel:+3801111111111"
+        >+380 11 1111 11 11</a
+      >
+    </address>
   </div>
 </section>
+
+<div class="footer-backdrop">
+  <div class="modal-window">
+    <h3 class="modal-window-header"></h3>
+    <p class="modal-window-text"></p>
+    <button class="modal-close-btn" type="button">
+      <svg class="modal-close-btn-img" width="22" height="22">
+        <use href="../img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+</div>
