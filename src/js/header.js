@@ -1,32 +1,50 @@
+const menuBox = document.querySelector(".menu")
 const menu = document.querySelector(".menu-title");
 const menuList = document.querySelector(".menu-list");
 const openBtn = document.querySelector(".open-mobile-menu");
 const mobMenu = document.querySelector(".mobile-menu");
 
-// const mobMenuList = document.querySelector(".mobile-menu-list");
-// const orderProject = document.querySelector(".order-project-mobm");
-// const closeBtn = document.querySelector(".close-menu");
 
-menu.addEventListener("click", handleClick);
-menuList.addEventListener("click", handleClick);
-
-function handleClick() {
-    menuList.classList.toggle("hidden");
+menuBox.addEventListener("click", handleClick);
+function handleClick(event) {
+    if (event.target.nodeName === "DIV") {
+        return;
+    } else {
+        menuList.classList.toggle("hidden");
+    }
 }
 
 openBtn.addEventListener("click", openBtnClick)
-
 function openBtnClick() {
-    mobMenu.classList.add("is-open");
+     mobMenu.classList.add("is-open");
 }
+
 
 mobMenu.addEventListener("click", closeBtnClick);
-
-function closeBtnClick() {
-    mobMenu.classList.remove("is-open");
+function closeBtnClick( event) {
+    if (event.target.nodeName === "DIV") {
+        return;
+    } else{
+        mobMenu.classList.remove("is-open");
+    }
 }
 
-// closeBtn.addEventListener("click", closeBtnClick);
-// mobMenuList.addEventListener("click", closeBtnClick);
-// orderProject.addEventListener("click", closeBtnClick);
 
+
+
+// const nav = document.querySelector(".header-nav")
+// const menuListItem = document.querySelector(".menu-list-item")
+
+// nav.addEventListener("click", handleClick);
+
+// function handleClick(event) {
+//     if (event.target === openBtn) {
+//         console.log("click");
+//         mobMenu.classList.add("is-open");
+//     } else if (event.target === menu) {
+//         console.log("click");
+//         menuList.classList.toggle("hidden");
+//     } else {
+//         return;
+//     }
+// }
