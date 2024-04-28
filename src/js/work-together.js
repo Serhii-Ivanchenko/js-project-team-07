@@ -23,7 +23,7 @@ if (formNewState) {
 }
 
 function onFooterEmailInput() {
-  if (footerEmailInput.validity.patternMismatch || footerEmailInput.value.trim().length >= 0) {
+  if (footerEmailInput.validity.patternMismatch && footerEmailInput.value.trim().length >= 0) {
     footerEmailInput.style.borderBottomColor = '#E74A3B';
     footerInputErrorMsg.style.color = '#E74A3B';
     footerInputErrorMsg.textContent = 'Invalid email, try again';
