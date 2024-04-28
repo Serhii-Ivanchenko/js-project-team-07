@@ -9,3 +9,4 @@ import './js/reviews.js';
 import './js/swagger-api.js';
 import './js/swiper.js';
 import './js/work-together.js';
+import './js/scroll-to-top.js'
