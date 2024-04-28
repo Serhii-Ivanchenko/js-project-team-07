@@ -128,3 +128,28 @@
 }
 
 /* 1440 */
+@media only screen and (min-width: 1440px) {
+  .faq-items {
+    display: grid;
+    /* Дві колонки однакової ширини */
+    grid-template-columns: auto 50%;
+    gap: 32px;
+    /* Відступ між елементами */
+    align-items: start;
+    /* Вирівнювання елементів по верхньому краю колонки */
+    grid-auto-flow: column;
+    /* Змінюємо потік на колонки */
+  }
+
+  /* Перші три елементи в першій колонці */
+  .faq-item:nth-child(-n+3) {
+    grid-column: 1;
+    /* Перша колонка */
+  }
+
+  /* Решта елементів в другій колонці */
+  .faq-item:nth-child(n+4) {
+    grid-column: 2;
+    /* Друга колонка */
+  }
+}
