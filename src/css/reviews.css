@@ -137,12 +137,7 @@
     }   
 }
 
-/* .forward-button {
-    stroke: #3B3B3B;
-    border: 1px solid rgba(250, 250, 250, 0.2);
-} */
-
-.back-button {
+.rewiews-button-disabled {
     stroke: #3B3B3B;
     border: 1px solid rgba(250, 250, 250, 0.2);
 } 
@@ -150,7 +145,6 @@
 .rewiews-button-icon {
     width: 24px;
     height: 24px;
-    stroke: white;
 }
 
 @media screen and (min-width: 768px) {
