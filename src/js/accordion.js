@@ -8,16 +8,16 @@ function createAccordion({
   elementClass,
   triggerClass,
   panelClass,
-  openOnInit,
-  duration,
+  openOnInit = [],
+  duration = 600,
 }) {
   return new Accordion(containerClass, {
     elementClass,
     triggerClass,
     panelClass,
     showMultiple: true,
-    openOnInit: [],
-    duration: 400,
+    openOnInit: openOnInit,
+    duration: duration,
     beforeOpen: icon => {
       const useElement = icon.querySelector('use');
       useElement.setAttribute('href', '../img/icons.svg#icon-arrow-up');

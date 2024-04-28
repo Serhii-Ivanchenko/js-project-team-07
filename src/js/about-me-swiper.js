@@ -23,10 +23,10 @@ const aboutmeSwiper = initSwiper('.aboutme-swiper', {
       spaceBetween: 0,
     },
   },
-  navigation: {
-    nextEl: '.aboutme-slide-next',
-    // prevEl: '.projects-button-prev',
-  },
+  // navigation: {
+  // nextEl: '.aboutme-slide-next',
+  // prevEl: '.projects-button-prev',
+  // },
 });
 const nextSlideBtn = document.querySelector('.aboutme-slide-next');
 nextSlideBtn.addEventListener('click', e => {
