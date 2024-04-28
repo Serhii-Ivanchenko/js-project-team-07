@@ -14,12 +14,12 @@ function createAccordion({
     triggerClass,
     panelClass,
     showMultiple: true,
-    beforeOpen: icon => {
-      const useElement = icon.querySelector('use');
+    beforeOpen: currentElement => {
+      const useElement = currentElement.querySelector('use');
       useElement.setAttribute('href', '../img/icons.svg#icon-arrow-up');
     },
-    beforeClose: icon => {
-      const useElement = icon.querySelector('use');
+    beforeClose: currentElement => {
+      const useElement = currentElement.querySelector('use');
       useElement.setAttribute('href', '../img/icons.svg#icon-arrow-down');
     },
   });
