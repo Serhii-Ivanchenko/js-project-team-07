@@ -1,4 +1,3 @@
-/* width: 552px; */
 .aboutme {
   display: flex;
   flex-direction: column;
@@ -64,18 +63,8 @@
   }
 }
 
-/* .aboutme-title-function {
-  color: #ed3b44;
-} */
-
 .aboutme-title-websites {
   color: rgba(250, 250, 250, 0.4);
-}
-.aboutme-header-img {
-  /* width: 343px; */
-  /* height: 500px; */
-  /* object-fit: fill; */
-  /* object-fit: cover; */
 }
 
 @media only screen and (min-width: 768px) {
@@ -94,16 +83,38 @@
   gap: 32px;
 }
 
-.aboutme-info-item {
+.aboutme-item {
   padding-bottom: 32px;
   border-bottom: 1px solid #3b3b3b;
 }
-.aboutme-info-item:last-child {
+.aboutme-item:last-child {
   margin-bottom: 8px;
 }
-.aboutme-info-item.is-active {
+.aboutme-item.is-active {
   /* padding-bottom: 0; */
   /* margin-bottom: 0; */
+}
+/* .aboutme-item:hover {
+   background: #242527; 
+}*/
+.aboutme-item-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+
+  color: rgba(250, 250, 250, 0.4);
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  border-radius: 12px;
+}
+.aboutme-item-header:hover {
+  background: #242527;
 }
 
 .aboutme-info-header {
@@ -122,7 +133,8 @@
 
   cursor: pointer;
 }
-.aboutme-info-btn {
+.aboutme-item-btn {
+  /* .aboutme-info-btn { */
   padding: 10px;
 
   display: flex;
@@ -135,15 +147,25 @@
   width: 42px;
   height: 42px;
   cursor: pointer;
+
+  fill: none;
+  stroke: #fafafa;
+  transition: rotate 333ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.aboutme-item-btn:hover,
+.aboutme-item-btn:focus {
+  border: 1px solid #fff; /* rgba(250, 250, 250, 0.2); */
+  rotate: 360deg;
+  scale: 1.1;
 }
 
 /* ac-panel ------------------------------------------*/
-.aboutme-info-text-list {
+.aboutme-item-panel {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 16px;
 }
-.aboutme-info-text {
+.aboutme-item-text {
   color: #fafafa;
   font-size: 16px;
   font-weight: 500;
@@ -155,37 +177,44 @@
   /* margin-bottom: 10px; */
 }
 @media only screen and (min-width: 768px) {
-  .aboutme-info-text {
-    /* margin-bottom: 32px; */
-  }
+  /* .aboutme-item-text {  } */
 }
 @media only screen and (min-width: 1440px) {
   .aboutme-info {
     width: 1440px;
   }
-  .aboutme-info-item.is-active {
-    /* padding-bottom: 0; */
-    /* margin-bottom: 0; */
-    /* padding-bottom: 32px; */
-  }
-  .aboutme-info-text {
+  /* .aboutme-item.is-active {  } */
+  .aboutme-item-text {
     width: 612px;
     margin-left: 696px;
-    /* padding-right: 68px; */
   }
 }
-.aboutme-skills-swiper {
+
+/* ------------------- facking.SWIPER -------------------- */
+.aboutme-swiper-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  flex-direction: row;
+  min-width: 0;
+}
+/* .swiper, */
+.aboutme-swiper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 343px;
+  min-width: 0;
 }
-.aboutme-skills {
+.aboutme-swiper-wrapper {
   display: flex;
-  overflow: hidden;
+  min-width: 0;
+  /* overflow: hidden; */
   width: 260px;
 }
-.aboutme-skill {
+
+.aboutme-slide {
   width: 130px;
   height: 130px;
 
@@ -206,44 +235,41 @@
   letter-spacing: -0.02em;
 }
 
-.skill-accent {
+.swiper-slide-active > .aboutme-slide {
   background-color: #ed3b44;
 }
 
-.aboutme-nav-btn,
-.aboutme-skill-next {
+.aboutme-slide-next {
   width: 42px;
   height: 42px;
   fill: none;
   cursor: pointer;
-  stroke: #fafafa;
-}
-.aboutme-skill-next {
   stroke: #3b3b3b;
+  /* stroke: yellow; */
+  z-index: 999;
 }
 
 @media only screen and (min-width: 768px) {
-  .aboutme-skills-swiper {
+  .aboutme-swiper {
     width: 704px;
   }
-  .aboutme-skills {
+  .aboutme-swiper-wrapper {
     width: 600px;
   }
-  .aboutme-skill {
+  .aboutme-slide {
     width: 200px;
     height: 200px;
-  }
-  /* .aboutme-skill {
     font-size: 20px;
-  } */
+  }
 }
 
 @media only screen and (min-width: 1440px) {
-  .aboutme-skills-swiper {
+  /* .swiper, */
+  .aboutme-swiper {
     /* width: 1364px; */
     width: 1312px;
   }
-  .aboutme-skills {
+  .aboutme-swiper-wrapper {
     width: 1200px;
   }
 }

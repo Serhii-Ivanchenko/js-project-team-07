@@ -13,7 +13,6 @@
       <li class="aboutme-header-item">
         <picture>
           <source
-            media="(min-width: 768px)"
             srcset="
               ../img/about_me/about_me_photo_1x.webp 1x,
               ../img/about_me/about_me_photo_2x.webp 2x
@@ -38,24 +37,18 @@
   </div>
 
   <div class="container aboutme-info">
-    <div class="accordion-container">
-      <div class="ac aboutme-info-item">
+    <ul class="accordion-container">
+      <li class="ac aboutme-item">
         <div class="ac-trigger">
-          <ul class="ac-header- aboutme-info-header">
-            <li class="aboutme-info-title">ABOUT ME</li>
-            <li class="aboutme-info-btn">
-              <svg class="aboutme-nav-btn">
-                <use href="../img/icons.svg#icon-arrow-up"></use>
-              </svg>
-            </li>
-          </ul>
+          <h3 class="aboutme-item-header">
+            About me
+            <svg class="aboutme-item-btn">
+              <use href="../img/icons.svg#icon-arrow-up"></use>
+            </svg>
+          </h3>
         </div>
-        <div class="ac-panel aboutme-info-text-list">
-          <!-- <p class="ac-text"> -->
-          <!-- <div class="ac-text"> -->
-          <!-- <ul class="aboutme-info-text-list"> -->
-          <!-- <li class="aboutme-info-text"> -->
-          <p class="ac-text aboutme-info-text">
+        <div class="ac-panel aboutme-item-panel">
+          <p class="aboutme-item-text">
             I am Lloyd Jefferson, a talented programmer with extensive expertise
             in software development. I have an understanding of different
             programming languages ​​and technologies, always ready to improve my
@@ -64,9 +57,7 @@
             of analytical skills and am able to effectively solve even the most
             difficult tasks encountered on the way.
           </p>
-          <!-- </li> -->
-          <!-- <li class="aboutme-info-text"> -->
-          <p class="ac-text aboutme-info-text">
+          <p class="aboutme-item-text">
             Able to work both independently and in a team. I can effectively
             cooperate with colleagues, exchanging ideas and finding optimal
             solutions. Professional maturity allows you to calmly cope with
@@ -78,80 +69,75 @@
             architectural concepts that allow me to create efficient and
             scalable software.
           </p>
-          <!-- </li> -->
-          <!-- </ul> -->
-          <!-- </div> -->
         </div>
-      </div>
+      </li>
 
-      <div class="ac aboutme-info-item">
-        <!-- <h2 class="ac-header">
-          <button type="button" class="ac-trigger">role</button>
-        </h2> -->
+      <li class="ac aboutme-item">
         <div class="ac-trigger">
-          <ul class="ac-header- aboutme-info-header">
-            <li class="aboutme-info-title">ROLE</li>
-            <li class="aboutme-info-btn">
-              <svg class="aboutme-nav-btn">
-                <use href="../img/icons.svg#icon-arrow-down"></use>
-              </svg>
-            </li>
-          </ul>
+          <h3 class="aboutme-item-header">
+            Role
+            <svg class="aboutme-item-btn">
+              <use href="../img/icons.svg#icon-arrow-up"></use>
+            </svg>
+          </h3>
         </div>
-        <div class="ac-panel aboutme-info-text-list">
-          <!-- <ul class="aboutme-info-text-list">
-            <li class="ac-text aboutme-info-text">Frontend development</li>
-            <li class="ac-text aboutme-info-text">HeadlessCMS,Wordpress</li>
-            <li class="ac-text aboutme-info-text">Blender(enjoy)</li>
-          </ul> -->
-          <p class="ac-text aboutme-info-text">Frontend development</p>
-          <p class="ac-text aboutme-info-text">HeadlessCMS,Wordpress</p>
-          <p class="ac-text aboutme-info-text">Blender(enjoy)</p>
+        <div class="ac-panel aboutme-item-panel">
+          <p class="aboutme-item-text">Frontend development</p>
+          <p class="aboutme-item-text">HeadlessCMS,Wordpress</p>
+          <p class="aboutme-item-text">Blender(enjoy)</p>
         </div>
-      </div>
+      </li>
 
-      <div class="ac aboutme-info-item">
-        <!-- <h2 class="ac-header">
-          <button type="button" class="ac-trigger">education</button>
-        </h2> -->
+      <li class="ac aboutme-item">
         <div class="ac-trigger">
-          <ul class="ac-header- aboutme-info-header">
-            <li class="aboutme-info-title">EDUCATION</li>
-            <li class="aboutme-info-btn">
-              <svg class="aboutme-nav-btn">
-                <use href="../img/icons.svg#icon-arrow-down"></use>
-              </svg>
-            </li>
-          </ul>
+          <h3 class="aboutme-item-header">
+            Education
+            <svg class="aboutme-item-btn">
+              <use href="../img/icons.svg#icon-arrow-up"></use>
+            </svg>
+          </h3>
         </div>
-
-        <div class="ac-panel aboutme-info-text-list">
-          <p class="ac-text aboutme-info-text">
+        <div class="ac-panel aboutme-item-panel">
+          <p class="aboutme-item-text">
             2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
           </p>
-          <p class="ac-text aboutme-info-text">
+          <p class="aboutme-item-text">
             2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
             New York
           </p>
-          <p class="ac-text aboutme-info-text">
+          <p class="aboutme-item-text">
             2020 - 2022 / Advanced Blender Animation Techniques, Udemy
           </p>
         </div>
-      </div>
-    </div>
+      </li>
+    </ul>
   </div>
 
   <div class="container">
-    <div class="aboutme-skills-swiper">
-      <ul class="aboutme-skills">
-        <li class="aboutme-skill skill-accent">HTML/CSS</li>
-        <li class="aboutme-skill">JavaScript</li>
-        <li class="aboutme-skill">React</li>
-        <li class="aboutme-skill">Node.js</li>
-        <li class="aboutme-skill">React Native</li>
-        <li class="aboutme-skill">Soft scills</li>
-      </ul>
-      <svg class="aboutme-skill-next">
+    <div class="aboutme-swiper-container">
+      <div class="aboutme-swiper">
+        <ul class="swiper-wrapper aboutme-swiper-wrapper">
+          <li class="swiper-slide aboutme-swiper-slide">
+            <div class="aboutme-slide">HTML/CSS</div>
+          </li>
+          <li class="swiper-slide aboutme-swiper-slide">
+            <div class="aboutme-slide">JavaScript</div>
+          </li>
+          <li class="swiper-slide aboutme-swiper-slide">
+            <div class="aboutme-slide">React</div>
+          </li>
+          <li class="swiper-slide aboutme-swiper-slide">
+            <div class="aboutme-slide">Node.js</div>
+          </li>
+          <li class="swiper-slide aboutme-swiper-slide">
+            <div class="aboutme-slide">React Native</div>
+          </li>
+          <li class="swiper-slide aboutme-swiper-slide">
+            <div class="aboutme-slide">Soft scills</div>
+          </li>
+        </ul>
+      </div>
+      <svg class="aboutme-slide-next">
         <use href="../img/icons.svg#icon-arrow-right"></use>
       </svg>
     </div>
