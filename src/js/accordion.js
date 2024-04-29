@@ -18,11 +18,17 @@ function createAccordion({
     duration: duration,
     beforeOpen: currentElement => {
       const useElement = currentElement.querySelector('use');
-      useElement.setAttribute('href', '/img/icons.svg#icon-arrow-up');
+      useElement.setAttribute(
+        'href',
+        '/js-project-team-07/assets/icons-ad714d05.svg#icon-arrow-down'
+      );
     },
     beforeClose: currentElement => {
       const useElement = currentElement.querySelector('use');
-      useElement.setAttribute('href', '/img/icons.svg#icon-arrow-down');
+      useElement.setAttribute(
+        'href',
+        '/js-project-team-07/assets/icons-ad714d05.svg#icon-arrow-down'
+      );
     },
   });
 }
