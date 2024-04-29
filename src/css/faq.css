@@ -1,6 +1,6 @@
 /* Ul/li */
 .faq-items {
-  padding-top: 32px;
+  margin-top: 32px;
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
 }
 
@@ -18,42 +18,59 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .faq-items {
+/* .faq-items {
     display: grid;
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: auto 50%;
+    align-items: start;
+    grid-auto-flow: column;
+  }
+
+  .faq-item:nth-child(-n+3) {
+    grid-column: 1;
+    padding-right: 32px;
+    border-right: 1px solid rgba(250, 250, 250, 0.2);
+  }
+
+  .faq-item:nth-child(n+4) {
+    grid-column: 2;
+    padding-left: 32px;
+    border-left: 1px solid rgba(250, 250, 250, 0.2);
   }
 
   .faq-item {
     padding-bottom: 26px;
     width: 688px;
-  }
-
-
-  .faq-item:nth-child(n+4) {
-    padding-right: 32px;
-    border-right: 1px solid rgba(250, 250, 250, 0.2);
-    grid-column: 2;
-  }
-
-  /* .faq-item:nth-child(n+4) {
-    padding-left: 32px;
   } */
 
-  /* .column {
-    flex: 1;
-  } */
+    .faq-items {
+      display: grid;
+      grid-template-columns: auto 50%;
+      align-items: start;
+      grid-auto-flow: column;
+    }
+  
+    .faq-item:nth-child(-n+3) {
+      grid-column: 1;
+      padding-right: 16px;
+      /* Половина товщини рамки */
+      border-right: 1px solid rgba(250, 250, 250, 0.2);
 
-  /* .faq-items-lines {
-    border-left: 1px solid rgba(250, 250, 250, 0.2);
-  } */
-  /* 
-  .faq-items-lines>.faq-item {
-    padding-left: 32px;
-  }
-
-  .column>.faq-item {
-    padding-right: 32px;
-  } */
+      /* Зовнішній відступ для створення проміжку */
+    }
+  
+    .faq-item:nth-child(n+4) {
+      grid-column: 2;
+      padding-left: 16px;
+      /* Половина товщини рамки */
+      border-left: 1px solid rgba(250, 250, 250, 0.2);
+    
+      /* Зовнішній відступ для створення проміжку */
+    }
+  
+    .faq-item {
+      padding-bottom: 26px;
+      width: 688px;
+    }
 }
 
 /* Title */
@@ -65,7 +82,6 @@
   font-weight: 600;
   line-height: 150%;
   letter-spacing: -0.02em;
-  padding-bottom: 16px;
   max-width: 290px;
   min-width: 208px;
 }
@@ -73,7 +89,6 @@
 @media only screen and (min-width: 768px) {
   .faq-title {
     max-width: 575px;
-    padding-bottom: 26px;
   }
 
   .fit {
@@ -86,6 +101,7 @@
 }
 
 .title-items {
+  margin-bottom: 16px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -120,6 +136,8 @@
 
 /* Btn  */
 .faq-acordeon-btn {
+  width: 34px;
+  height: 34px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -136,6 +154,8 @@
 
 @media only screen and (min-width: 768px) {
   .faq-acordeon-btn {
+      width: 40px;
+        height: 40px;
     padding: 10px;
   }
 }
