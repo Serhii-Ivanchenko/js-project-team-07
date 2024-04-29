@@ -16,11 +16,19 @@ function toggleModal() {
 }
 
 benefitsList.addEventListener('click', ({ target }) => {
-  const textLi = target.closest('li.benefits-item').innerHTML;
   toggleModal();
+  const textLi = target.closest('li.benefits-item').innerHTML;
   modalContent.insertAdjacentHTML('beforeend', textLi);
 
-  // Блокуємо прокручування body
+  // Отримуємо текст з елемента <p class="benefits-text-more">
+  const moreText = target
+    .closest('li.benefits-item')
+    .querySelector('.benefits-text-more').innerHTML;
+
+  // Додаємо текст в кінець модального вікна
+  modalContent.insertAdjacentHTML('beforeend', moreText);
+
+  // Блокуємо прокрутку body
   document.body.style.height = '100%';
   document.body.style.overflow = 'hidden';
 });
@@ -35,7 +43,7 @@ function benefitsCloseModal(event) {
     toggleModal();
     modalContent.innerHTML = '';
 
-    // Розблокуємо прокручування body
+    // Розблоковуємо прокрутку body
     document.body.style.overflow = '';
   }
 }
