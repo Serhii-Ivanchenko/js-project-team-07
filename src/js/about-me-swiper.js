@@ -26,6 +26,5 @@ const aboutmeSwiper = initSwiper('.aboutme-swiper', {
 });
 const nextSlideBtn = document.querySelector('.aboutme-slide-next');
 nextSlideBtn.addEventListener('click', e => {
-  console.log('click-nextSlideBtn');
   aboutmeSwiper.slideNext();
 });
