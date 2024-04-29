@@ -9,10 +9,10 @@
     &.visibleModal {
         .benefits-modal {
                 display: block;
-                position: absolute;
+                position: fixed;
                 top: 0;
                 left: 0;
-                background-color: #ed3b44be;
+                background-color: rgba(250, 250, 250, 0.2);
                 width: 100%;
                 height: 100%;
             }
