@@ -101,8 +101,8 @@
 
 @media only screen and (min-width: 768px) {
   .accordion-container {
-      gap: 32px;
-    }
+    gap: 32px;
+  }
 }
 
 .aboutme-item {
@@ -163,16 +163,16 @@
 
 @media only screen and (min-width: 768px) {
   .aboutme-item-panel {
-      gap: 16px;
-      margin-top: 8px;
-      margin-bottom: 32px;
-    }
+    gap: 16px;
+    margin-top: 8px;
+    margin-bottom: 32px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
   .aboutme-item-panel {
-      gap: 32px;
-    }
+    gap: 32px;
+  }
 }
 
 .aboutme-role-education-list {
@@ -194,6 +194,7 @@
   }
 }
 
+/* SWIPER */
 .aboutme-swiper-container {
   display: flex;
   align-items: center;
