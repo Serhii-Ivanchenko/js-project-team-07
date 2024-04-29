@@ -1,3 +1,7 @@
+.projects-section {
+  overflow: hidden;
+}
+
 .projects-swiper-container {
   margin-top: 32px;
 }
