@@ -2,6 +2,18 @@
   padding-left: 0;
   padding-right: 0;
   max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(../img/covers/covers-bg_1x.webp);
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .covers-container {
+    background-image: url(../img/covers/covers-bg_2x.webp);
+  }
 }
 
 .content {
@@ -19,11 +31,13 @@
     height: 960px;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .content {
     min-width: 1440px;
   }
 }
+
 .marquee {
   position: absolute;
   right: -800px;
@@ -34,12 +48,12 @@
 .marquee-inner {
   display: flex;
   transform: rotate(17deg);
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .marquee-line {
   flex-shrink: 0;
-  margin-right: 12px;
+  margin-right: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,11 +61,12 @@
   /* width: 282px; */
   white-space: nowrap;
   animation-name: marqueeLine;
-  animation-duration: 10s;
+  animation-duration: 12s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+
 /* @media screen and (min-width: 768px) {
   .marquee-line {
     width: 544px;
