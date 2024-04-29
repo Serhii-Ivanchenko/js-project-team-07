@@ -1,15 +1,15 @@
 .header{
   position: absolute;
   top: 32px;
-  right: 16px;
-  left: 16px;
+  right: 0;
+  left: 0;
   /* z-index: 999; */
 }
 
 @media only screen and (min-width: 768px) {
   .header {
-    right: 32px;
-    left: 32px;
+    right: 0;
+    left: 0;
   }
 }
 
