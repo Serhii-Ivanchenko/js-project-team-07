@@ -43,6 +43,9 @@
 .rewiews-list-element {
   display: flex;
   padding: 32px 24px;
+  height: 302px !important;
+  flex-direction: column;
+  overflow: hidden;
   border-radius: 20px;
   border: 1px solid rgba(250, 250, 250, 0.2);
 }
@@ -67,6 +70,12 @@
   font-size: 16px;
   line-height: 150%;
   letter-spacing: -0.02em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  
 
   color: rgba(250, 250, 250, 0.6);
 }
@@ -143,3 +152,17 @@
 .swiper-button-lock {
   display: flex !important;
 }
+
+.reviews-error-item {
+  height: 302px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.reviews-error-text {
+font-size: 38px;
+}
+
