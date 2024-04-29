@@ -23,14 +23,14 @@ if (formNewState) {
 }
 
 function onFooterEmailInput() {
-  if (footerEmailInput.validity.patternMismatch && footerEmailInput.value.trim().length > 0) {
+  if (footerEmailInput.validity.patternMismatch || footerEmailInput.value.trim().length <= 0) {
     footerEmailInput.style.borderBottomColor = '#E74A3B';
     footerInputErrorMsg.style.color = '#E74A3B';
     footerInputErrorMsg.textContent = 'Invalid email, try again';
   } else {
     footerEmailInput.style.borderBottomColor = '#3CBC81';
     footerInputErrorMsg.style.color = '#3CBC81';
-    footerInputErrorMsg.textContent = 'Succes!';
+    footerInputErrorMsg.textContent = 'Success!';
   }
 }
 
@@ -58,7 +58,7 @@ async function onFormSubmit(evt) {
       localStorage.removeItem('savedUserInput');
     } catch (error) {
       openBackdrop();
-      modalWindowHeader.textContent = error.code;
+      modalWindowHeader.textContent = error.message;
       modalWindowText.textContent = "Please, try again";
       modalWindowHeader.style.color = "#ed3b44";
       modalWindowText.style.color = "#ed3b44"; 
