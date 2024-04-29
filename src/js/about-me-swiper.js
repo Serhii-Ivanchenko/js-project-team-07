@@ -23,20 +23,9 @@ const aboutmeSwiper = initSwiper('.aboutme-swiper', {
       spaceBetween: 0,
     },
   },
-  // navigation: {
-  // nextEl: '.aboutme-slide-next',
-  // prevEl: '.projects-button-prev',
-  // },
 });
 const nextSlideBtn = document.querySelector('.aboutme-slide-next');
 nextSlideBtn.addEventListener('click', e => {
   console.log('click-nextSlideBtn');
   aboutmeSwiper.slideNext();
 });
-
-// const nextSlideBtnAll = document.querySelectorAll('.aboutme-slide-next');
-// nextSlideBtnAll.forEach(nextSlideBtn => {
-//   nextSlideBtn.addEventListener('click', e => {
-//     aboutmeSwiper.slideNext();
-//   });
-// });
