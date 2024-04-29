@@ -8,22 +8,22 @@ function createAccordion({
   elementClass,
   triggerClass,
   panelClass,
-  openOnInit,
-  duration,
+  openOnInit = [],
+  duration = 400,
 }) {
   return new Accordion(containerClass, {
     elementClass,
     triggerClass,
     panelClass,
     showMultiple: true,
-    openOnInit: [],
-    duration: 400,
-    beforeOpen: icon => {
-      const useElement = icon.querySelector('use');
+    openOnInit: openOnInit,
+    duration: duration,
+    beforeOpen: currentElement => {
+      const useElement = currentElement.querySelector('use');
       useElement.setAttribute('href', '../img/icons.svg#icon-arrow-up');
     },
-    beforeClose: icon => {
-      const useElement = icon.querySelector('use');
+    beforeClose: currentElement => {
+      const useElement = currentElement.querySelector('use');
       useElement.setAttribute('href', '../img/icons.svg#icon-arrow-down');
     },
   });
