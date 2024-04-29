@@ -15,22 +15,26 @@ function toggleModal() {
   domElement.classList.toggle('visibleModal');
 }
 
-benefitsList.addEventListener('click', ({ target }) => {
-  toggleModal();
-  const textLi = target.closest('li.benefits-item').innerHTML;
-  modalContent.insertAdjacentHTML('beforeend', textLi);
+const cards = benefitsList.querySelectorAll('.benefits-item');
 
-  // Отримуємо текст з елемента <p class="benefits-text-more">
-  const moreText = target
-    .closest('li.benefits-item')
-    .querySelector('.benefits-text-more').innerHTML;
+cards.forEach(card => {
+  card.addEventListener('click', event => {
+    toggleModal();
+    const textLi = card.closest('li.benefits-item').innerHTML;
+    modalContent.insertAdjacentHTML('beforeend', textLi);
 
-  // Додаємо текст в кінець модального вікна
-  modalContent.insertAdjacentHTML('beforeend', moreText);
+    // Отримуємо текст з елемента <p class="benefits-text-more">
+    const moreText = card
+      .closest('li.benefits-item')
+      .querySelector('.benefits-text-more').innerHTML;
 
-  // Блокуємо прокрутку body
-  document.body.style.height = '100%';
-  document.body.style.overflow = 'hidden';
+    // Додаємо текст в кінець модального вікна
+    modalContent.insertAdjacentHTML('beforeend', moreText);
+
+    // Блокуємо прокрутку body
+    document.body.style.height = '100%';
+    document.body.style.overflow = 'hidden';
+  });
 });
 
 function benefitsCloseModal(event) {
@@ -50,7 +54,10 @@ function benefitsCloseModal(event) {
 
 modal.addEventListener('click', benefitsCloseModal);
 document.addEventListener('keydown', event => {
-  if (event.code === 'Escape') {
+  if (
+    event.code === 'Escape' &&
+    domElement.classList.contains('visibleModal')
+  ) {
     benefitsCloseModal(event);
   }
 });
