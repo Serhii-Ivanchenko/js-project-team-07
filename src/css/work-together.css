@@ -46,7 +46,7 @@
   font-size: 40px;
   font-style: normal;
   font-weight: 500;
-  line-height: 1;
+  line-height: 110%;
   letter-spacing: -0.03em;
   text-transform: uppercase;
 }
@@ -335,4 +335,17 @@
 
 .modal-close-btn-img {
   stroke: #fafafa;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  background-color: transparent;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-webkit-autofill::first-line,
+textarea:-webkit-autofill::first-line,
+select:-webkit-autofill::first-line {
+  color: rgba(250, 250, 250, 0.6);
 }

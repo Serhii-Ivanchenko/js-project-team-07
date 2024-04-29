@@ -1,53 +1,55 @@
-<section id="about-me" class="section aboutme">
-  <h2 class="visually-hidden">About me</h2>
-  <div class="container">
+<section id="about-me" class="section">
+  <div class="container aboutme-container">
+    <h2 class="visually-hidden">About me</h2>
     <ul class="aboutme-header">
       <li class="aboutme-header-item">
-        <p class="aboutme-header-title">
+        <h3 class="aboutme-header-title">
           I work with people all over the world to create impressive and
           <span class="accent">functional </span>
           <span class="aboutme-title-websites">websites </span> that reflect
           each client's unique personality.
-        </p>
+        </h3>
       </li>
-      <li class="aboutme-header-item">
+      <li class="aboutme-header-item thumb">
         <picture>
           <source
+            media="(min-width: 768px)"
             srcset="
-              ../img/about_me/about_me_photo_1x.webp 1x,
-              ../img/about_me/about_me_photo_2x.webp 2x
+              ./img/about_me/about_me_photo_1x.webp 1x,
+              ./img/about_me/about_me_photo_2x.webp 2x
             "
+            type="image/webp"
           />
           <source
-            media="(min-width: 375px)"
+            media="(max-width: 767px)"
             srcset="
-              ../img/about_me/about_me_photo_mobile_1x.webp 1x,
-              ../img/about_me/about_me_photo_mobile_2x.webp 2x
+              ./img/about_me/about_me_photo_mobile_1x.webp 1x,
+              ./img/about_me/about_me_photo_mobile_2x.webp 2x
             "
+            type="image/webp"
           />
           <img
             class="aboutme-header-img"
-            src="../img/about_me/about_me_photo_mobile_1x.webp"
+            src="./img/about_me/about_me_photo_mobile_1x.webp"
             loading="lazy"
-            alt="IchBin"
+            alt="Lloyd Jefferson"
           />
         </picture>
       </li>
     </ul>
-  </div>
 
-  <div class="container aboutme-info">
     <ul class="accordion-container">
-      <li class="ac aboutme-item">
-        <div class="ac-trigger aboutme-ac-trigger">
-          <h3 class="aboutme-item-header">
-            About me
+      <li class="aboutme-item">
+        <h3 class="aboutme-item-header aboutme-ac-trigger">
+          About me
+          <button type="button">
             <svg class="aboutme-item-btn">
-              <use href="../img/icons.svg#icon-arrow-up"></use>
+              <use href="./img/icons.svg#icon-arrow-up"></use>
             </svg>
-          </h3>
-        </div>
-        <div class="ac-panel aboutme-item-panel">
+          </button>
+        </h3>
+
+        <div class="aboutme-item-panel">
           <p class="aboutme-item-text">
             I am Lloyd Jefferson, a talented programmer with extensive expertise
             in software development. I have an understanding of different
@@ -72,48 +74,48 @@
         </div>
       </li>
 
-      <li class="ac aboutme-item">
-        <div class="ac-trigger aboutme-ac-trigger">
-          <h3 class="aboutme-item-header">
-            Role
+      <li class="aboutme-item">
+        <h3 class="aboutme-item-header aboutme-ac-trigger">
+          Role
+          <button type="button">
             <svg class="aboutme-item-btn">
-              <use href="../img/icons.svg#icon-arrow-up"></use>
+              <use href="./img/icons.svg#icon-arrow-down"></use>
             </svg>
-          </h3>
-        </div>
-        <div class="ac-panel aboutme-item-panel">
-          <p class="aboutme-item-text">Frontend development</p>
-          <p class="aboutme-item-text">HeadlessCMS,Wordpress</p>
-          <p class="aboutme-item-text">Blender(enjoy)</p>
-        </div>
+          </button>
+        </h3>
+
+        <ul class="aboutme-item-panel aboutme-role-education-list">
+          <li class="aboutme-item-text">Frontend development</li>
+          <li class="aboutme-item-text">HeadlessCMS,Wordpress</li>
+          <li class="aboutme-item-text">Blender(enjoy)</li>
+        </ul>
       </li>
 
       <li class="ac aboutme-item">
-        <div class="ac-trigger aboutme-ac-trigger">
-          <h3 class="aboutme-item-header">
-            Education
+        <h3 class="aboutme-item-header aboutme-ac-trigger">
+          Education
+          <button type="button">
             <svg class="aboutme-item-btn">
-              <use href="../img/icons.svg#icon-arrow-up"></use>
+              <use href="./img/icons.svg#icon-arrow-down"></use>
             </svg>
-          </h3>
-        </div>
-        <div class="ac-panel aboutme-item-panel">
-          <p class="aboutme-item-text">
+          </button>
+        </h3>
+
+        <ul class="aboutme-item-panel aboutme-role-education-list">
+          <li class="aboutme-item-text">
             2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
-          </p>
-          <p class="aboutme-item-text">
+          </li>
+          <li class="aboutme-item-text">
             2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
             New York
-          </p>
-          <p class="aboutme-item-text">
+          </li>
+          <li class="aboutme-item-text">
             2020 - 2022 / Advanced Blender Animation Techniques, Udemy
-          </p>
-        </div>
+          </li>
+        </ul>
       </li>
     </ul>
-  </div>
 
-  <div class="container">
     <div class="aboutme-swiper-container">
       <div class="aboutme-swiper">
         <ul class="swiper-wrapper aboutme-swiper-wrapper">
@@ -133,7 +135,7 @@
             <div class="aboutme-slide">React Native</div>
           </li>
           <li class="swiper-slide aboutme-swiper-slide">
-            <div class="aboutme-slide">Soft scills</div>
+            <div class="aboutme-slide">Soft skills</div>
           </li>
 
           <!-- for infinity loop -->
@@ -153,13 +155,15 @@
             <div class="aboutme-slide">React Native</div>
           </li>
           <li class="swiper-slide aboutme-swiper-slide">
-            <div class="aboutme-slide">Soft scills</div>
+            <div class="aboutme-slide">Soft skills</div>
           </li>
         </ul>
       </div>
-      <svg class="aboutme-slide-next">
-        <use href="../img/icons.svg#icon-arrow-right"></use>
-      </svg>
+      <button type="button">
+        <svg class="aboutme-slide-next">
+          <use href="./img/icons.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </section>

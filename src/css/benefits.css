@@ -4,7 +4,43 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: -0.02em;
+    position: relative;
+
+    &.visibleModal {
+        .benefits-modal {
+            display: block;
+            position: fixed;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            background-color: #383434be;
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
+
+.benefits-modal {
+    display: none;
+}
+
+.modal--content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 24px;
+    background: #242527;
+    padding: 25px;
+}
+
+/* .close-benefits-icon {
+    position: absolute;
+    top: -15px;
+    right: 5px;
+    cursor: pointer;
+} */
 
 .benefits-main-container {
     display: flex;
@@ -27,7 +63,7 @@
 
 .benefits-item {
     display: flex;
-    width: 344px;
+    max-width: 344px;
     padding: 24px;
     flex-direction: column;
     align-items: flex-start;
@@ -67,9 +103,29 @@
     margin-bottom: 8px;
 }
 
+.benefits-text-more{
+    display: none;
+}
+
+.benefits-visible{
+    display: block;
+    margin-top: 20px;
+}
+
 .benefits-item {
     line-height: 1.5;
     color: rgba(250, 250, 250, 0.60);
+
+    transition: transform 300ms ease-in-out;
+}
+
+.benefits-item:hover,
+.benefits-item:focus,
+.benefits-link-box:hover,
+.benefits-link-box:focus {
+    /* Збільшуємо картку при наведенні або фокусі */
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .benefits-link-box {
@@ -82,9 +138,21 @@
 
     border-radius: 60px;
     border: 1px solid rgba(250, 250, 250, 0.20);
+
+    transition: border 300ms ease-in-out, transform 300ms ease-in-out;
 }
 
 .benefits-link-box:hover,
 .benefits-link-box:focus {
     border: 1px solid #FAFAFA;
+}
+
+.close-menu {
+    transition: rotate 333ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-menu:hover,
+.close-menu:focus {
+    rotate: 360deg;
+    scale: 1.1
 }

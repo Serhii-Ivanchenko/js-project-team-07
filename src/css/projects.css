@@ -1,9 +1,6 @@
-.projects-section {
-  overflow: hidden;
-}
-
 .projects-swiper-container {
   margin-top: 32px;
+  overflow: hidden;
 }
 
 .projects-swiper-slide {

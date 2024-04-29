@@ -132,7 +132,9 @@
         height: 55px;
     }
 }
-
+.hero-social-item a {
+    
+}
 .hero-email {
     width: 178px;
     padding: 10px 12px;
