@@ -9,10 +9,11 @@
     &.visibleModal {
         .benefits-modal {
                 display: block;
-                position: absolute;
+                position: fixed;
+                overflow: hidden;
                 top: 0;
                 left: 0;
-                background-color: #ed3b44be;
+                background-color: #383434be;
                 width: 100%;
                 height: 100%;
             }
@@ -115,6 +116,7 @@
 .benefits-link-box:focus {
     /* Збільшуємо картку при наведенні або фокусі */
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 .benefits-link-box {
