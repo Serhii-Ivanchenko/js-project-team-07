@@ -13,14 +13,3 @@ const projectsInitSwiper = initSwiper('.projects-swiper-container', {
     prevEl: '.projects-button-prev',
   },
 });
-swiper.on('reachEnd', () => {
-  document
-    .querySelector('.swiper-button-next')
-    .classList.add('.swiper-button-disabled');
-});
-
-swiper.on('reachBeginning', () => {
-  document
-    .querySelector('.swiper-button-prev')
-    .classList.add('.swiper-button-disabled');
-});
