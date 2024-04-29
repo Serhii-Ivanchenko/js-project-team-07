@@ -33,7 +33,7 @@ const projectsInitSwiper = initSwiper('.rewiews-list-wrapper', {
   },
   direction: 'horizontal',
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 16,
   navigation: {
     nextEl: '.rewiews-button-next',
     prevEl: '.rewiews-button-prev',
@@ -41,11 +41,11 @@ const projectsInitSwiper = initSwiper('.rewiews-list-wrapper', {
   breakpoints: {
     768: {
       slidesPerView: 2,
-      spaceBetween: 0,
+      spaceBetween: 16,
     },
     1440: {
       slidesPerView: 4,
-      spaceBetween: 0,
+      spaceBetween: 16,
     },
   },
 });

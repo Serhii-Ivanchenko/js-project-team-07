@@ -1,16 +1,11 @@
-/* .rewiews-conteiner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-} */
+.rewiews-list-wrapper {
+  overflow: hidden;
+}
 
 .reviews-list {
   display: flex;
-  padding: 32px 24px;
-  flex-direction: row;
   align-items: flex-start;
-  gap: 32px;
+  margin-bottom: 32px;
 }
 
 @media screen and (min-width: 320px) {
@@ -19,37 +14,14 @@
   }
 }
 
-@media screen and (min-width: 375px) {
-  .rewiews-conteiner {
-    width: 343px;
-    align-items: flex-start;
-  }
-}
+@media screen and (min-width: 375px) {}
 
-@media screen and (min-width: 768px) {
-  .rewiews-conteiner {
-    width: 704px;
-  }
-}
+@media screen and (min-width: 768px) {}
 
-@media screen and (min-width: 1440px) {
-  .rewiews-conteiner {
-    display: inline-flex;
-  }
-}
-
-.rewiews-title {
-  color: rgba(250, 250, 250, 0.4);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px;
-  letter-spacing: -0.32px;
-}
+@media screen and (min-width: 1440px) {}
 
 .rewiews-list-wrapper {
   margin-top: 32px;
-  margin-bottom: 32px;
 }
 
 /* .reviews-list li:nth-child(1n + 5) {
@@ -70,32 +42,31 @@
 
 .rewiews-list-element {
   display: flex;
-  width: 332px;
   padding: 32px 24px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-
   border-radius: 20px;
   border: 1px solid rgba(250, 250, 250, 0.2);
 }
 
-.rewiews-element-title {
+.rewiews-img {
+  border-radius: 10px;
+  margin-bottom: 32px;
+}
+
+.rewiew-element-title {
+  margin-bottom: 8px;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: 30px;
-  letter-spacing: -0.4px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
 
   color: #fafafa;
 }
 
 .rewiews-text {
   font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: -0.32px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
 
   color: rgba(250, 250, 250, 0.6);
 }
@@ -124,12 +95,12 @@
   fill: none;
   stroke: white;
 
-  padding: 14px;
+  padding: 13px;
 }
 
 @media screen and (min-width: 768px) {
   .rewiews-button-prev {
-    padding: 18px;
+    padding: 17px;
   }
 }
 
@@ -144,12 +115,12 @@
   fill: none;
   stroke: white;
 
-  padding: 14px;
+  padding: 13px;
 }
 
 @media screen and (min-width: 768px) {
   .rewiews-button-next {
-    padding: 18px;
+    padding: 17px;
   }
 }
 
