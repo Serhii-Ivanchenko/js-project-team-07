@@ -336,3 +336,16 @@
 .modal-close-btn-img {
   stroke: #fafafa;
 }
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  background-color: transparent;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-webkit-autofill::first-line,
+textarea:-webkit-autofill::first-line,
+select:-webkit-autofill::first-line {
+  color: rgba(250, 250, 250, 0.6);
+}
