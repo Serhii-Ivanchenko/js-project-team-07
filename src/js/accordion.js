@@ -20,7 +20,7 @@ function createAccordion({
       const useElement = currentElement.querySelector('use');
       useElement.setAttribute(
         'href',
-        '/js-project-team-07/assets/icons-ad714d05.svg#icon-arrow-down'
+        '/js-project-team-07/assets/icons-ad714d05.svg#icon-arrow-up'
       );
     },
     beforeClose: currentElement => {
