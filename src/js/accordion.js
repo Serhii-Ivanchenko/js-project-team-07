@@ -1,8 +1,6 @@
 import Accordion from 'accordion-js';
 // import 'accordion-js/dist/accordion.min.css';
 
-// const icon = document.querySelector('.ac-btn-icon');
-
 function createAccordion({
   containerClass,
   elementClass,
