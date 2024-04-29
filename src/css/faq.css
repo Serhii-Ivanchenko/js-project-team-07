@@ -18,7 +18,7 @@
 }
 
 @media only screen and (min-width: 1440px) {
-/* .faq-items {
+  .faq-items {
     display: grid;
     grid-template-columns: auto 50%;
     align-items: start;
@@ -28,7 +28,7 @@
   .faq-item:nth-child(-n+3) {
     grid-column: 1;
     padding-right: 32px;
-    border-right: 1px solid rgba(250, 250, 250, 0.2);
+    /* border-right: 1px solid rgba(250, 250, 250, 0.2); */
   }
 
   .faq-item:nth-child(n+4) {
@@ -40,37 +40,7 @@
   .faq-item {
     padding-bottom: 26px;
     width: 688px;
-  } */
-
-    .faq-items {
-      display: grid;
-      grid-template-columns: auto 50%;
-      align-items: start;
-      grid-auto-flow: column;
-    }
-  
-    .faq-item:nth-child(-n+3) {
-      grid-column: 1;
-      padding-right: 16px;
-      /* Половина товщини рамки */
-      border-right: 1px solid rgba(250, 250, 250, 0.2);
-
-      /* Зовнішній відступ для створення проміжку */
-    }
-  
-    .faq-item:nth-child(n+4) {
-      grid-column: 2;
-      padding-left: 16px;
-      /* Половина товщини рамки */
-      border-left: 1px solid rgba(250, 250, 250, 0.2);
-    
-      /* Зовнішній відступ для створення проміжку */
-    }
-  
-    .faq-item {
-      padding-bottom: 26px;
-      width: 688px;
-    }
+  }
 }
 
 /* Title */
@@ -154,8 +124,8 @@
 
 @media only screen and (min-width: 768px) {
   .faq-acordeon-btn {
-      width: 40px;
-        height: 40px;
+    width: 40px;
+    height: 40px;
     padding: 10px;
   }
 }
