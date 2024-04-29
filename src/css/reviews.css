@@ -14,31 +14,9 @@
   }
 }
 
-@media screen and (min-width: 375px) {}
-
-@media screen and (min-width: 768px) {}
-
-@media screen and (min-width: 1440px) {}
-
 .rewiews-list-wrapper {
   margin-top: 32px;
 }
-
-/* .reviews-list li:nth-child(1n + 5) {
-  display: none;
-} */
-
-/* @media only screen and (max-width: 767.98px) {
-  .reviews-list li:nth-child(1n + 2) {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 1439.98px) {
-  .reviews-list li:nth-child(1n + 3) {
-    display: none;
-  }
-} */
 
 .rewiews-list-element {
   display: flex;
@@ -75,7 +53,7 @@
   display: -webkit-box;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
-  
+
 
   color: rgba(250, 250, 250, 0.6);
 }
@@ -163,6 +141,5 @@
 }
 
 .reviews-error-text {
-font-size: 38px;
+  font-size: 38px;
 }
-
