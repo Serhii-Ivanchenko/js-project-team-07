@@ -53,8 +53,10 @@ function onFormInput(evt) {
 async function onFormSubmit(evt) {
   evt.preventDefault();
 
+  const userInfo = JSON.parse(localStorage.getItem('savedUserInput'));
+
   try {
-    const response = await postData(formNewState);
+    const response = await postData(userInfo);
     openBackdrop();
     modalWindowHeader.textContent = response.title;
     modalWindowText.textContent = response.message;

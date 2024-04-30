@@ -11,3 +11,4 @@ import './js/swagger-api.js';
 import './js/work-together.js';
 import './js/scroll-to-top.js'
 import './js/animations.js'
+import './js/blb-for-covers.js'

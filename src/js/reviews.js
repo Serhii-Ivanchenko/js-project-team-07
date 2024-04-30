@@ -1,6 +1,9 @@
 import { initSwiper } from './swiper';
 import { getData } from './swagger-api';
 import { reviewsListEl, reviewsSection } from './refs';
+import * as basicLightbox from 'basiclightbox';
+import 'basiclightbox/dist/basicLightbox.min.css';
+
 
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
@@ -68,6 +71,9 @@ async function searchReviews() {
         });
       } else {
         reviewsListEl.insertAdjacentHTML('beforeend', createMarkup(response));
+
+
+
       }
     } catch (error) {
       reviewsListEl.innerHTML = createError();
@@ -107,4 +113,52 @@ function createError() {
   return `<li class="reviews-error-item">
   <p class="reviews-error-text">NOT FOUND</p>
   </li>`;
+}
+
+// Функція модального вікна 
+
+reviewsListEl.addEventListener('click', handleClick);
+
+function handleClick(event) {
+  event.preventDefault();
+
+  const reviewElement = event.target.closest('.rewiews-list-element');
+
+  if (reviewElement) {
+    const avatarUrl = reviewElement.querySelector('.rewiews-img').getAttribute('src');
+    const author = reviewElement.querySelector('.rewiew-element-title').textContent;
+    const review = reviewElement.querySelector('.rewiews-text').textContent;
+
+    const instance = basicLightbox.create(
+      `
+      <div class="modal">
+        <img
+          class="rewiews-img"
+          width="48px"
+          src="${avatarUrl}"
+          alt="${author}"
+          loading="lazy"
+        />
+        <h3>${author}</h3>
+        <p>${review}</p>
+      </div>
+      `,
+      {
+        onShow: instance => {
+          window.addEventListener('keydown', onEscPress);
+        },
+        onClose: instance => {
+          window.removeEventListener('keydown', onEscPress);
+        },
+      }
+    );
+
+    instance.show();
+
+    function onEscPress(event) {
+      if (event.code === 'Escape') {
+        instance.close();
+      }
+    }
+  }
 }
