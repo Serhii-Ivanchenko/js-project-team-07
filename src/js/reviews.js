@@ -1,6 +1,9 @@
 import { initSwiper } from './swiper';
 import { getData } from './swagger-api';
 import { reviewsListEl, reviewsSection } from './refs';
+import * as basicLightbox from 'basiclightbox';
+import 'basiclightbox/dist/basicLightbox.min.css';
+
 
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
@@ -68,6 +71,9 @@ async function searchReviews() {
         });
       } else {
         reviewsListEl.insertAdjacentHTML('beforeend', createMarkup(response));
+        
+
+
       }
     } catch (error) {
       reviewsListEl.innerHTML = createError();
@@ -108,3 +114,39 @@ function createError() {
   <p class="reviews-error-text">NOT FOUND</p>
   </li>`;
 }
+
+reviewsListEl.addEventListener('click', handleClick);
+
+function handleClick(event) {
+  event.preventDefault();
+
+  if (event.target === event.currentTarget) {
+    return;
+  }
+ console.log(event.target);
+  const instance = basicLightbox.create(
+    `
+    <div class="modal">
+        
+    </div>
+`,
+    {
+      onShow: instance => {
+        window.addEventListener('keydown', onEscPress);
+      },
+      onClose: instance => {
+        window.removeEventListener('keydown', onEscPress);
+      },
+    }
+  );
+
+  instance.show();
+
+  function onEscPress(event) {
+    if (event.code === 'Escape') {
+      console.log(event);
+      instance.close();
+    }
+  }
+}
+

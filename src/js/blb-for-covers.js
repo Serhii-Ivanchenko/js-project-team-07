@@ -12,8 +12,6 @@ function handleClick(event) {
     return;
   }
 
-  console.log(event.target.src);
-
   const instance = basicLightbox.create(
     `<img class="modal-img" srcset="${event.target.srcset}">`,
     {
