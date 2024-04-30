@@ -92,7 +92,9 @@ function createMarkup(arr) {
             class="rewiews-img"
             width="48px"
             src="${avatar_url}"
+            srcset="${avatar_url} 1x, ${avatar_url} 2x"
             alt="${author}"
+            loading ="lazy"
           />
           <h3 class="rewiew-element-title">${author}</h3>
           <p class="rewiews-text">${review}</p>

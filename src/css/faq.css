@@ -2,6 +2,7 @@
 .faq-items {
   margin-top: 32px;
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  overflow: hidden;
 }
 
 .faq-item {
