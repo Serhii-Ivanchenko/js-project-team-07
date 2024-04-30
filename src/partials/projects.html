@@ -23,20 +23,13 @@
             >
           </div>
           <div class="projects-dark-side">
-            <picture>
-              <source
-                srcset="
-                  ./img/projects/projects_1_1x.webp 1x,
-                  ./img/projects/projects_1_2x.webp 2x
-                "
-                type="image/webp"
-              />
-              <img
-                src="./img/projects/projects_1_1x.webp"
-                alt="read journey"
-                class="projects-img"
-              />
-            </picture>
+            <img
+              src="./img/projects/projects_1_1x.webp"
+              srcset="./img/projects/projects_1_2x.webp 2x"
+              alt="read journey"
+              class="projects-img"
+              loading="lazy"
+            />
           </div>
         </li>
         <li class="projects-swiper-slide swiper-slide">
@@ -59,19 +52,13 @@
             >
           </div>
           <div class="projects-dark-side">
-            <picture>
-              <source
-                srcset="
-                  ./img/projects/projects_2_1x.webp 1x,
-                  ./img/projects/projects_2_2x.webp 2x
-                "
-              />
               <img
                 src="./img/projects/projects_2_1x.webp"
+                srcset="./img/projects/projects_2_2x.webp 2x"
                 alt="petlove"
                 class="projects-img"
+                loading="lazy"
               />
-            </picture>
           </div>
         </li>
         <li class="projects-swiper-slide swiper-slide">
@@ -94,29 +81,24 @@
             >
           </div>
           <div class="projects-dark-side">
-            <picture>
-              <source
-                srcset="
-                  ./img/projects/projects_3_1x.webp 1x,
-                  ./img/projects/projects_3_2x.webp 2x
-                "
-              />
+              <source />
               <img
                 src="./img/projects/projects_3_1x.webp"
+                srcset="./img/projects/projects_3_2x.webp 2x"
                 alt="Vocabuilder"
                 class="projects-img"
+                loading="lazy"
               />
-            </picture>
           </div>
         </li>
       </ul>
       <div class="projects-button-wrapper">
-        <button type="button" class="projects-button-prev">
+        <button type="button" class="projects-button-prev" aria-label="Swipe to the previous slide">
           <svg class="projects-button-icon">
             <use href="./img/icons.svg#icon-arrow-left"></use>
           </svg>
         </button>
-        <button type="button" class="projects-button-next">
+        <button type="button" class="projects-button-next" aria-label="Swipe to the next slide">
           <svg class="projects-button-icon">
             <use href="./img/icons.svg#icon-arrow-right"></use>
           </svg>
