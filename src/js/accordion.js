@@ -19,17 +19,21 @@ function createAccordion({
 }
 
 function handleAccordionClick(event, { btnClass, iconClass }) {
+  const arrowBtn =
+    event.currentTarget.querySelector(btnClass) ||
+    event.target.closest(btnClass);
   // console.log('handleAccordionClick:--------------');
-  // console.log('e.t', event.target);
-  // console.log('e.c', event.currentTarget);
-  const arrowBtn = event.currentTarget.querySelector(btnClass);
+  // console.log('e.t:', event.target);
+  // console.log('e.c:', event.currentTarget);
   // console.log('arrowBtn', arrowBtn);
+
+  const arrowIcon = event.currentTarget.querySelector(iconClass);
+  // console.log('e.t.c:', event.target.closest(btnClass));
   if (!arrowBtn) return;
 
-  const arrowIcon = event.currentTarget.querySelector(iconClass); //||&&arrowBtn.querySelector(iconClass);
   const isRotated = arrowBtn.classList.contains('rotated');
-  // console.log('arrowIcon', arrowIcon);
-  // console.log('isRotated', isRotated);
+  // console.log('arrowIcon:', arrowIcon);
+  // console.log('isRotated:', isRotated);
   if (isRotated) {
     arrowIcon.style.transform = 'rotate(0deg)';
     arrowBtn.classList.remove('rotated');
@@ -41,11 +45,12 @@ function handleAccordionClick(event, { btnClass, iconClass }) {
 }
 
 function handleClick(event, { btnClass, iconClass }) {
+  const arrowBtn = event.target.closest(btnClass);
   // console.log('handleClick:-----------------');
   // console.log('e.t', event.target);
   // console.log('e.c', event.currentTarget);
-  const arrowBtn = event.target.closest(btnClass);
   // console.log('arrowBtn', arrowBtn);
+
   if (!arrowBtn) return;
 
   const arrowIcon = arrowBtn.querySelector(iconClass);
