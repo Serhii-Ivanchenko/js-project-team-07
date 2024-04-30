@@ -1,10 +1,10 @@
-const menuBox = document.querySelector('.menu');
-const menu = document.querySelector('.menu-title');
-const menuList = document.querySelector('.menu-list');
-const openBtn = document.querySelector('.open-mobile-menu');
-const mobMenu = document.querySelector('.mobile-menu');
-const nav = document.querySelector('.header-nav');
-const menuListItem = document.querySelector('.menu-list-item');
+import {
+  menu,
+  menuList,
+  openBtn,
+  mobMenu,
+  nav,
+} from './refs';
 
 mobMenu.addEventListener('click', closeBtnClick);
 nav.addEventListener('click', onNavElementsClick);

@@ -1,4 +1,5 @@
 import { initSwiper } from './swiper';
+import { nextSlideBtn } from './refs';
 
 const aboutmeSwiper = initSwiper('.aboutme-swiper', {
   loop: true,
@@ -25,7 +26,6 @@ const aboutmeSwiper = initSwiper('.aboutme-swiper', {
   },
 });
 
-const nextSlideBtn = document.querySelector('.aboutme-slide-next');
 nextSlideBtn.addEventListener('click', e => {
   aboutmeSwiper.slideNext();
 });

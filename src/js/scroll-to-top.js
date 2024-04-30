@@ -1,4 +1,4 @@
-const scrollToTopBtn = document.querySelector('.scroll-up-btn');
+import { scrollToTopBtn } from "./refs";
 
 scrollToTopBtn.addEventListener('click', onScrollToTopBtnClick);
 

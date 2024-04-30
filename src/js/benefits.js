@@ -1,7 +1,8 @@
-const benefitsBody = document.querySelector('body');
-const benefitsList = benefitsBody.querySelector('.benefits-list');
-const benefitsClose = benefitsBody.querySelector('.close-benefits-btn');
-const benefitsIcon = benefitsBody.querySelector('.close-benefits-icon');
+import {
+  benefitsClose,
+  benefitsIcon,
+  benefitsList,
+} from './refs';
 
 const getElement = (path, dom = document) => {
   return dom.querySelector(path);

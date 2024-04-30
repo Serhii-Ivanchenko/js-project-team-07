@@ -1,6 +1,5 @@
 import { createAccordion, handleClick } from './accordion';
-
-const accordionList = document.querySelector('.aboutme-accordion-container');
+import { accordionList } from './refs';
 
 const options = {
   containerClass: '.aboutme-accordion-container',
