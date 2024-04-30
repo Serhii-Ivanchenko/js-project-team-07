@@ -20,7 +20,6 @@
   position: relative;
   box-sizing: border-box;
   min-width: 320px;
-  /* max-width: 375px; */
   height: 508px;
   overflow: hidden;
 }
@@ -57,8 +56,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* width: calc(100% / 8); */
-  /* width: 282px; */
+
   white-space: nowrap;
   animation-duration: 25s;
   animation-timing-function: ease-in-out;
@@ -66,11 +64,6 @@
   animation-direction: alternate;
 }
 
-/* @media screen and (min-width: 768px) {
-  .marquee-line {
-    width: 544px;
-  }
-} */
 
 .covers-img {
   width: 282px;
@@ -81,6 +74,7 @@
 .covers-img:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) {
@@ -90,15 +84,6 @@
   }
 }
 
-/* @keyframes marqueeLine {
-  from {
-    transform: translateX(-10%);
-  }
-
-  to {
-    transform: translateX(-300%);
-  }
-} */
 
 .marquee-inner:nth-child(odd) .marquee-line {
   animation-name: marqueeLineRight;
