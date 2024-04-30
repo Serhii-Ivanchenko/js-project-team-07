@@ -71,7 +71,7 @@ async function searchReviews() {
         });
       } else {
         reviewsListEl.insertAdjacentHTML('beforeend', createMarkup(response));
-        
+
 
 
       }
@@ -115,38 +115,50 @@ function createError() {
   </li>`;
 }
 
+// Функція модального вікна 
+
 reviewsListEl.addEventListener('click', handleClick);
 
 function handleClick(event) {
   event.preventDefault();
 
-  if (event.target === event.currentTarget) {
-    return;
-  }
- console.log(event.target);
-  const instance = basicLightbox.create(
-    `
-    <div class="modal">
-        
-    </div>
-`,
-    {
-      onShow: instance => {
-        window.addEventListener('keydown', onEscPress);
-      },
-      onClose: instance => {
-        window.removeEventListener('keydown', onEscPress);
-      },
-    }
-  );
+  const reviewElement = event.target.closest('.rewiews-list-element');
 
-  instance.show();
+  if (reviewElement) {
+    const avatarUrl = reviewElement.querySelector('.rewiews-img').getAttribute('src');
+    const author = reviewElement.querySelector('.rewiew-element-title').textContent;
+    const review = reviewElement.querySelector('.rewiews-text').textContent;
 
-  function onEscPress(event) {
-    if (event.code === 'Escape') {
-      console.log(event);
-      instance.close();
+    const instance = basicLightbox.create(
+      `
+      <div class="modal">
+        <img
+          class="rewiews-img"
+          width="48px"
+          src="${avatarUrl}"
+          alt="${author}"
+          loading="lazy"
+        />
+        <h3>${author}</h3>
+        <p>${review}</p>
+      </div>
+      `,
+      {
+        onShow: instance => {
+          window.addEventListener('keydown', onEscPress);
+        },
+        onClose: instance => {
+          window.removeEventListener('keydown', onEscPress);
+        },
+      }
+    );
+
+    instance.show();
+
+    function onEscPress(event) {
+      if (event.code === 'Escape') {
+        instance.close();
+      }
     }
   }
 }
-
