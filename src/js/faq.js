@@ -1,5 +1,6 @@
-import { createAccordion } from './accordion';
-const arrowBtns = document.querySelectorAll('.faq-acordeon-btn');
+import { createAccordion, handleClick } from './accordion';
+
+const accordionList = document.querySelector('.faq-items');
 
 const options = {
   containerClass: '.faq-items',
@@ -8,20 +9,14 @@ const options = {
   panelClass: 'faq-descr',
 };
 
-arrowBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    const icon = btn.querySelector('.modal-btn-icon');
-    const isRotated = btn.classList.contains('rotated');
+const clickOptions = {
+  btnClass: '.faq-acordeon-btn',
+  iconClass: '.modal-btn-icon',
+};
 
-    if (isRotated) {
-      icon.style.transform = 'rotate(0deg)';
-      btn.classList.remove('rotated');
-    } else {
-      icon.style.transform = 'rotate(180deg)';
-      btn.classList.add('rotated');
-    }
-  });
-});
 
+accordionList.addEventListener('click', event =>
+  handleClick(event, clickOptions)
+);
 
 createAccordion(options);

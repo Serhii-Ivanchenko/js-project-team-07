@@ -118,6 +118,7 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: -0.02em;
+    transition: background-color 300ms ease-in-out;
   }
 
   .order-project-link:hover,
