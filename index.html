@@ -25,8 +25,9 @@
           alt="logo-photo"
           width="80"
           height="80"
+          loading="lazy"
         />
-        <a class="header-logo" href="./index.html">
+        <a class="header-logo" href="./index.html" aria-label="Site logo and link to the main page">
           <svg class="header-icon" width="84" height="19">
             <use href="/js-project-team-07/assets/icons-ad714d05.svg#icon-logo"></use>
           </svg>
@@ -41,7 +42,7 @@
       </button>
 
       <div class="menu">
-        <button type="button" class="menu-title">Menu</button>
+        <button type="button" class="menu-title" aria-label="Open menu">Menu</button>
 
         <ul class="menu-list hidden">
           <li class="menu-list-item">
@@ -98,7 +99,7 @@
 </div>
 
 <!-- Scroll to top button -->
-<button id="scroll-up-btn" title="Go to top" class="scroll-up-btn">
+<button id="scroll-up-btn" title="Go to top" class="scroll-up-btn" aria-label="Scroll to top">
   <svg class="scroll-up-icon" width="30" height="30">
     <use href="/js-project-team-07/assets/icons-ad714d05.svg#icon-arrow-up"></use>
   </svg>
@@ -114,23 +115,24 @@
     </h1>
     <ul class="hero-social-list animated-element animation-up">
       <li class="hero-social-item">
-        <a href="https://www.instagram.com/goitclub/" target="_blank">IG</a>
+        <a href="https://www.instagram.com/goitclub/" target="_blank" aria-label="link to Instagram account">IG</a>
       </li>
       <li class="hero-social-item">
-        <a href="https://www.facebook.com/goITclub/" target="_blank">FB</a>
+        <a href="https://www.facebook.com/goITclub/" target="_blank" aria-label="link to Facebook account">FB</a>
       </li>
       <li class="hero-social-item">
-        <a href="https://www.youtube.com/c/GoIT" target="_blank">YT</a>
+        <a href="https://www.youtube.com/c/GoIT" target="_blank" aria-label="link to Youtube account">YT</a>
       </li>
       <li class="hero-social-item">
         <a
           href="https://github.com/Serhii-Ivanchenko/js-project-team-07"
           target="_blank"
+          aria-label="link to Github repo"
           >GH</a
         >
       </li>
       <li class="hero-social-item hero-email">
-        <a href="mailto:lloydjefferson@gmail.com" target="_blank"
+        <a href="mailto:lloydjefferson@gmail.com" target="_blank" aria-label="contact email"
           >lloydjefferson@gmail.com</a
         >
       </li>
@@ -176,7 +178,7 @@
       <li class="aboutme-item">
         <h3 class="aboutme-item-header aboutme-ac-trigger">
           About me
-          <button class="aboutme-accordion-btn" type="button">
+          <button class="aboutme-accordion-btn" type="button" aria-label="Open about-me information">
             <svg class="aboutme-item-btn" width="20px" height="20px">
               <use href="/js-project-team-07/assets/icons-ad714d05.svg#icon-arrow-up"></use>
             </svg>
@@ -211,7 +213,7 @@
       <li class="aboutme-item">
         <h3 class="aboutme-item-header aboutme-ac-trigger">
           Role
-          <button class="aboutme-accordion-btn" type="button">
+          <button class="aboutme-accordion-btn" type="button" aria-label="Open roles information">
             <svg class="aboutme-item-btn" width="20px" height="20px">
               <use href="/js-project-team-07/assets/icons-ad714d05.svg#icon-arrow-down"></use>
             </svg>
@@ -228,7 +230,7 @@
       <li class="ac aboutme-item">
         <h3 class="aboutme-item-header aboutme-ac-trigger">
           Education
-          <button class="aboutme-accordion-btn" type="button">
+          <button class="aboutme-accordion-btn" type="button" aria-label="Open Education information">
             <svg class="aboutme-item-btn" width="20px" height="20px">
               <use href="/js-project-team-07/assets/icons-ad714d05.svg#icon-arrow-down"></use>
             </svg>
@@ -291,7 +293,7 @@
           </li>
         </ul>
       </div>
-      <button type="button">
+      <button type="button" aria-label="Swipe the slider">
         <svg class="aboutme-slide-next">
           <use href="/js-project-team-07/assets/icons-ad714d05.svg#icon-arrow-right"></use>
         </svg>
@@ -307,7 +309,7 @@
       <ul class="benefits-list">
         <li class="benefits-item animated-element animation-scale">
           <div class="benefits-icon-box">
-            <svg class="benefits-icon" width="24" height="24">
+            <svg class="benefits-icon" width="24" height="24" aria-label="Author expertise icon">
               <use href="/js-project-team-07/assets/icons-ad714d05.svg#icon-user"></use>
             </svg>
           </div>
@@ -327,7 +329,7 @@
         </li>
         <li class="benefits-item animated-element animation-scale">
           <div class="benefits-icon-box">
-            <svg class="benefits-icon" width="24" height="24">
+            <svg class="benefits-icon" width="24" height="24" aria-label="Communication skills icon">
               <use href="/js-project-team-07/assets/icons-ad714d05.svg#icon-message-chat-circle"></use>
             </svg>
           </div>
@@ -347,7 +349,7 @@
         </li>
         <li class="benefits-item animated-element animation-scale">
           <div class="benefits-icon-box">
-            <svg class="benefits-icon" width="24" height="24">
+            <svg class="benefits-icon" width="24" height="24" aria-label="Creativity skill icon">
               <use href="/js-project-team-07/assets/icons-ad714d05.svg#icon-brush"></use>
             </svg>
           </div>
@@ -367,7 +369,7 @@
         </li>
         <li class="benefits-item animated-element animation-scale">
           <div class="benefits-icon-box">
-            <svg class="benefits-icon" width="24" height="24">
+            <svg class="benefits-icon" width="24" height="24" aria-label="Urgent execution icon">
               <use href="/js-project-team-07/assets/icons-ad714d05.svg#icon-hourglass"></use>
             </svg>
           </div>
@@ -436,17 +438,13 @@
             >
           </div>
           <div class="projects-dark-side">
-            <picture>
-              <source
-                srcset="/js-project-team-07/assets/projects_1_1x-4d90f51f.webp 1x, /js-project-team-07/assets/projects_1_2x-e6c4c785.webp 2x"
-                type="image/webp"
-              />
-              <img
-                src="/js-project-team-07/assets/projects_1_1x-4d90f51f.webp"
-                alt="read journey"
-                class="projects-img"
-              />
-            </picture>
+            <img
+              src="/js-project-team-07/assets/projects_1_1x-4d90f51f.webp"
+              srcset="/js-project-team-07/assets/projects_1_2x-e6c4c785.webp 2x"
+              alt="read journey"
+              class="projects-img"
+              loading="lazy"
+            />
           </div>
         </li>
         <li class="projects-swiper-slide swiper-slide">
@@ -469,16 +467,13 @@
             >
           </div>
           <div class="projects-dark-side">
-            <picture>
-              <source
-                srcset="/js-project-team-07/assets/projects_2_1x-19df62b5.webp 1x, /js-project-team-07/assets/projects_2_2x-ed476225.webp 2x"
-              />
               <img
                 src="/js-project-team-07/assets/projects_2_1x-19df62b5.webp"
+                srcset="/js-project-team-07/assets/projects_2_2x-ed476225.webp 2x"
                 alt="petlove"
                 class="projects-img"
+                loading="lazy"
               />
-            </picture>
           </div>
         </li>
         <li class="projects-swiper-slide swiper-slide">
@@ -501,26 +496,24 @@
             >
           </div>
           <div class="projects-dark-side">
-            <picture>
-              <source
-                srcset="/js-project-team-07/assets/projects_3_1x-1d6765e5.webp 1x, /js-project-team-07/assets/projects_3_2x-3f61535a.webp 2x"
-              />
+              <source />
               <img
                 src="/js-project-team-07/assets/projects_3_1x-1d6765e5.webp"
+                srcset="/js-project-team-07/assets/projects_3_2x-3f61535a.webp 2x"
                 alt="Vocabuilder"
                 class="projects-img"
+                loading="lazy"
               />
-            </picture>
           </div>
         </li>
       </ul>
       <div class="projects-button-wrapper">
-        <button type="button" class="projects-button-prev">
+        <button type="button" class="projects-button-prev" aria-label="Swipe to the previous slide">
           <svg class="projects-button-icon">
             <use href="/js-project-team-07/assets/icons-ad714d05.svg#icon-arrow-left"></use>
           </svg>
         </button>
-        <button type="button" class="projects-button-next">
+        <button type="button" class="projects-button-next" aria-label="Swipe to the next slide">
           <svg class="projects-button-icon">
             <use href="/js-project-team-07/assets/icons-ad714d05.svg#icon-arrow-right"></use>
           </svg>
@@ -539,7 +532,7 @@
           <h3 class="faq-title">
             What programming languages ​​are most often used in your project?
           </h3>
-          <button class="faq-acordeon-btn" type="button">
+          <button class="faq-acordeon-btn" type="button" aria-label="open FAQ item">
             <svg class="modal-btn-icon" width="20px" height="20px">
               <use href="/js-project-team-07/assets/icons-ad714d05.svg#icon-arrow-down"></use>
             </svg>
@@ -556,7 +549,7 @@
       <li class="faq-item animated-element animation-right">
         <div class="title-items">
           <h3 class="faq-title fit">What are the deadlines for the project?</h3>
-          <button class="faq-acordeon-btn" type="button">
+          <button class="faq-acordeon-btn" type="button" aria-label="open FAQ item">
             <svg class="modal-btn-icon" width="20px" height="20px">
               <use href="/js-project-team-07/assets/icons-ad714d05.svg#icon-arrow-down"></use>
             </svg>
@@ -574,7 +567,7 @@
       <li class="faq-item animated-element animation-right">
         <div class="title-items">
           <h3 class="faq-title fit">What payment methods do you accept?</h3>
-          <button class="faq-acordeon-btn" type="button">
+          <button class="faq-acordeon-btn" type="button" aria-label="open FAQ item">
             <svg class="modal-btn-icon" width="20px" height="20px">
               <use href="/js-project-team-07/assets/icons-ad714d05.svg#icon-arrow-down"></use>
             </svg>
@@ -591,7 +584,7 @@
       <li class="faq-item animated-element animation-left">
         <div class="title-items">
           <h3 class="faq-title">How can I contact you?</h3>
-          <button class="faq-acordeon-btn" type="button">
+          <button class="faq-acordeon-btn" type="button" aria-label="open FAQ item">
             <svg class="modal-btn-icon" width="20px" height="20px">
               <use href="/js-project-team-07/assets/icons-ad714d05.svg#icon-arrow-down"></use>
             </svg>
@@ -607,7 +600,7 @@
       <li class="faq-item animated-element animation-left">
         <div class="title-items">
           <h3 class="faq-title">Do you provide advice or support?</h3>
-          <button class="faq-acordeon-btn" type="button">
+          <button class="faq-acordeon-btn" type="button" aria-label="open FAQ item">
             <svg class="modal-btn-icon" width="20px" height="20px">
               <use href="/js-project-team-07/assets/icons-ad714d05.svg#icon-arrow-down"></use>
             </svg>
@@ -628,7 +621,7 @@
             What does the process of developing a software product look like
             from idea to implementation?
           </h3>
-          <button class="faq-acordeon-btn" type="button">
+          <button class="faq-acordeon-btn" type="button" aria-label="open FAQ item">
             <svg class="modal-btn-icon" width="20px" height="20px">
               <use href="/js-project-team-07/assets/icons-ad714d05.svg#icon-arrow-down"></use>
             </svg>
@@ -653,104 +646,111 @@
           <li class="marquee-line">
             <img
               src="/js-project-team-07/assets/first_screen_1_1x-4beaa1bb.webp"
-              alt="read journey"
+              alt="Starlight Studio"
               srcset="/js-project-team-07/assets/first_screen_1_2x-8b258c7e.webp 2x"
               class="covers-img"
+              loading="lazy"
             />
           </li>
           <li class="marquee-line">
             <img
               src="/js-project-team-07/assets/rectangle_4_1x-4070bb34.webp"
-              alt="read journey"
+              alt="Energy Flow"
               srcset="/js-project-team-07/assets/rectangle_4_2x-47805a91.webp 2x"
               class="covers-img"
+              loading="lazy"
             />
           </li>
           <li class="marquee-line">
             <img
               src="/js-project-team-07/assets/rectangle_5_1x-f98f09ee.webp"
-              alt="read journey"
+              alt="Fruitbox"
               srcset="/js-project-team-07/assets/rectangle_5_2x-090afdc5.webp 2x"
               class="covers-img"
+              loading="lazy"
             />
           </li>
           <li class="marquee-line">
             <img
               src="/js-project-team-07/assets/rectangle_6_1x-ddd26210.webp"
-              alt="read journey"
+              alt="Chego"
               srcset="/js-project-team-07/assets/rectangle_6_2x-a5452a18.webp 2x"
               class="covers-img"
+              loading="lazy"
             />
           </li>
           <li class="marquee-line">
             <img
               src="/js-project-team-07/assets/rectangle_7_1x-49b562c8.webp"
-              alt="read journey"
+              alt="Mimino"
               srcset="/js-project-team-07/assets/rectangle_7_2x-8130f4fd.webp 2x"
               class="covers-img"
+              loading="lazy"
             />
           </li>
           <li class="marquee-line">
             <img
               src="/js-project-team-07/assets/rectangle_8_1x-89d33259.webp"
-              alt="read journey"
+              alt="Vyshyvanka"
               srcset="/js-project-team-07/assets/rectangle_8_2x-93363cce.webp 2x"
               class="covers-img"
+              loading="lazy"
             />
           </li>
         </ul>
         <ul class="marquee-inner">
           <li class="marquee-line">
-            <picture>
-              <source
-                srcset="/js-project-team-07/assets/first_screen_1_1x-4beaa1bb.webp 1x, /js-project-team-07/assets/first_screen_1_2x-8b258c7e.webp 2x"
-                type="image/webp"
-              />
-              <img
-                src="/js-project-team-07/assets/first_screen_1_1x-4beaa1bb.webp"
-                alt="Starlight Studio"
-                class="covers-img"
-              />
-            </picture>
+            <img
+              src="/js-project-team-07/assets/first_screen_1_1x-4beaa1bb.webp"
+              alt="Starlight Studio"
+              srcset="/js-project-team-07/assets/first_screen_1_2x-8b258c7e.webp 2x"
+              class="covers-img"
+              loading="lazy"
+            />
           </li>
           <li class="marquee-line">
             <img
               src="/js-project-team-07/assets/rectangle_9_1x-b746f2e7.webp"
-              alt="read journey"
+              alt="Green Harvest"
               srcset="/js-project-team-07/assets/rectangle_9_2x-26272621.webp 2x"
               class="covers-img"
+              loading="lazy"
             />
           </li>
           <li class="marquee-line">
             <img
               src="/js-project-team-07/assets/rectangle_10_1x-20d92683.webp"
-              alt="read journey"
+              alt="Power Pulse"
               srcset="/js-project-team-07/assets/rectangle_10_2x-b36ff412.webp 2x"
               class="covers-img"
+              loading="lazy"
             />
           </li>
           <li class="marquee-line">
             <img
               src="/js-project-team-07/assets/rectangle_11_1x-88d401f4.webp"
-              alt="read journey"
+              alt="Wallet"
               srcset="/js-project-team-07/assets/rectangle_11_2x-e121839a.webp 2x"
               class="covers-img"
+              loading="lazy"
             />
           </li>
           <li class="marquee-line">
             <img
               src="/js-project-team-07/assets/rectangle_12_1x-19a022dc.webp"
-              alt="read journey"
+              alt="English Excellence"
               srcset="/js-project-team-07/assets/rectangle_12_2x-81bac593.webp 2x"
               class="covers-img"
+              loading="lazy"
             />
           </li>
           <li class="marquee-line">
             <img
               src="/js-project-team-07/assets/rectangle_4_1x-4070bb34.webp"
-              alt="read journey"
+              alt="Energy Flow"
               srcset="/js-project-team-07/assets/rectangle_4_2x-47805a91.webp 2x"
               class="covers-img"
+              loading="lazy"
             />
           </li>
         </ul>
@@ -758,49 +758,55 @@
           <li class="marquee-line">
             <img
               src="/js-project-team-07/assets/rectangle_5_1x-f98f09ee.webp"
-              alt="read journey"
+              alt="Fruitbox"
               srcset="/js-project-team-07/assets/rectangle_5_2x-090afdc5.webp 2x"
               class="covers-img"
+              loading="lazy"
             />
           </li>
           <li class="marquee-line">
             <img
               src="/js-project-team-07/assets/rectangle_6_1x-ddd26210.webp"
-              alt="read journey"
+              alt="Chego"
               srcset="/js-project-team-07/assets/rectangle_6_2x-a5452a18.webp 2x"
               class="covers-img"
+              loading="lazy"
             />
           </li>
           <li class="marquee-line">
             <img
               src="/js-project-team-07/assets/rectangle_7_1x-49b562c8.webp"
-              alt="read journey"
+              alt="Mimino"
               srcset="/js-project-team-07/assets/rectangle_7_2x-8130f4fd.webp 2x"
               class="covers-img"
+              loading="lazy"
             />
           </li>
           <li class="marquee-line">
             <img
               src="/js-project-team-07/assets/rectangle_8_1x-89d33259.webp"
-              alt="read journey"
+              alt="Vyshyvanka"
               srcset="/js-project-team-07/assets/rectangle_8_2x-93363cce.webp 2x"
               class="covers-img"
+              loading="lazy"
             />
           </li>
           <li class="marquee-line">
             <img
               src="/js-project-team-07/assets/rectangle_9_1x-b746f2e7.webp"
-              alt="read journey"
+              alt="Green Harvest"
               srcset="/js-project-team-07/assets/rectangle_9_2x-26272621.webp 2x"
               class="covers-img"
+              loading="lazy"
             />
           </li>
           <li class="marquee-line">
             <img
               src="/js-project-team-07/assets/rectangle_10_1x-20d92683.webp"
-              alt="read journey"
+              alt="Power Pulse"
               srcset="/js-project-team-07/assets/rectangle_10_2x-b36ff412.webp 2x"
               class="covers-img"
+              loading="lazy"
             />
           </li>
         </ul>
@@ -808,49 +814,55 @@
           <li class="marquee-line">
             <img
               src="/js-project-team-07/assets/rectangle_10_1x-20d92683.webp"
-              alt="read journey"
+              alt="Power Pulse"
               srcset="/js-project-team-07/assets/rectangle_10_2x-b36ff412.webp 2x"
               class="covers-img"
+              loading="lazy"
             />
           </li>
           <li class="marquee-line">
             <img
               src="/js-project-team-07/assets/rectangle_11_1x-88d401f4.webp"
-              alt="read journey"
+              alt="Wallet"
               srcset="/js-project-team-07/assets/rectangle_11_2x-e121839a.webp 2x"
               class="covers-img"
+              loading="lazy"
             />
           </li>
           <li class="marquee-line">
             <img
               src="/js-project-team-07/assets/rectangle_12_1x-19a022dc.webp"
-              alt="read journey"
+              alt="English Excellence"
               srcset="/js-project-team-07/assets/rectangle_12_2x-81bac593.webp 2x"
               class="covers-img"
+              loading="lazy"
             />
           </li>
           <li class="marquee-line">
             <img
               src="/js-project-team-07/assets/first_screen_1_1x-4beaa1bb.webp"
-              alt="read journey"
+              alt="Starlight Studio"
               srcset="/js-project-team-07/assets/first_screen_1_2x-8b258c7e.webp 2x"
               class="covers-img"
+              loading="lazy"
             />
           </li>
           <li class="marquee-line">
             <img
               src="/js-project-team-07/assets/rectangle_4_1x-4070bb34.webp"
-              alt="read journey"
+              alt="Energy Flow"
               srcset="/js-project-team-07/assets/rectangle_4_2x-47805a91.webp 2x"
               class="covers-img"
+              loading="lazy"
             />
           </li>
           <li class="marquee-line">
             <img
               src="/js-project-team-07/assets/rectangle_5_1x-f98f09ee.webp"
-              alt="read journey"
+              alt="Fruitbox"
               srcset="/js-project-team-07/assets/rectangle_5_2x-090afdc5.webp 2x"
               class="covers-img"
+              loading="lazy"
             />
           </li>
         </ul>
@@ -864,104 +876,16 @@
     <h2 class="rewiews-title">REVIEWS</h2>
     <div class="rewiews-list-wrapper swiper-container animated-element animation-scale">
       <ul class="reviews-list swiper-wrapper">
-        <!-- <li class="rewiews-list-element swiper-slide">
-          <img
-            class="rewiews-img"
-            width="48px"
-            src="../img/logo_photo/logo_photo_1x.webp"
-            alt="Ivetta"
-          />
-          <h3 class="rewiew-element-title">Ivetta</h3>
-          <p class="rewiews-text">
-            Thanks for the excellent work on the project! His talent and
-            professionalism deserve recognition. I recommend it to everyone who
-            is looking for an expert in the field of software development.
-          </p>
-        </li>
-
-        <li class="rewiews-list-element swiper-slide">
-          <img
-            class="rewiews-img"
-            width="48px"
-            src="../img/logo_photo/logo_photo_1x.webp"
-            alt="Ivetta"
-          />
-          <h3 class="rewiew-element-title">Ivetta</h3>
-          <p class="rewiews-text">
-            Thanks for the excellent work on the project! His talent and
-            professionalism deserve recognition. I recommend it to everyone who
-            is looking for an expert in the field of software development.
-          </p>
-        </li>
-
-       <li class="rewiews-list-element swiper-slide">
-          <img
-            class="rewiews-img"
-            width="48px"
-            src="../img/logo_photo/logo_photo_1x.webp"
-            alt="Ivetta"
-          />
-          <h3 class="rewiew-element-title">Ivetta</h3>
-          <p class="rewiews-text">
-            Thanks for the excellent work on the project! His talent and
-            professionalism deserve recognition. I recommend it to everyone who
-            is looking for an expert in the field of software development.
-          </p>
-        </li>
-
-        <li class="rewiews-list-element swiper-slide">
-          <img
-            class="rewiews-img"
-            width="48px"
-            src="../img/logo_photo/logo_photo_1x.webp"
-            alt="Ivetta"
-          />
-          <h3 class="rewiew-element-title">Ivetta</h3>
-          <p class="rewiews-text">
-            Thanks for the excellent work on the project! His talent and
-            professionalism deserve recognition. I recommend it to everyone who
-            is looking for an expert in the field of software development.
-          </p>
-        </li>
-
-        <li class="rewiews-list-element swiper-slide">
-          <img
-            class="rewiews-img"
-            width="48px"
-            src="../img/logo_photo/logo_photo_1x.webp"
-            alt="Ivetta"
-          />
-          <h3 class="rewiew-element-title">Ivetta</h3>
-          <p class="rewiews-text">
-            Thanks for the excellent work on the project! His talent and
-            professionalism deserve recognition. I recommend it to everyone who
-            is looking for an expert in the field of software development.
-          </p>
-        </li>
-
-        <li class="rewiews-list-element swiper-slide">
-          <img
-            class="rewiews-img"
-            width="48px"
-            src="../img/logo_photo/logo_photo_1x.webp"
-            alt="Ivetta"
-          />
-          <h3 class="rewiew-element-title">Ivetta</h3>
-          <p class="rewiews-text">
-            Thanks for the excellent work on the project! His talent and
-            professionalism deserve recognition. I recommend it to everyone who
-            is looking for an expert in the field of software development.
-          </p>
-        </li> -->
+        
       </ul>
 
       <div class="rewiews-button-wrapper">
-        <button type="button" class="rewiews-button-prev">
+        <button type="button" class="rewiews-button-prev" aria-label="Swipe to the previous slide">
           <svg class="rewiews-button-icon">
             <use href="/js-project-team-07/assets/icons-ad714d05.svg#icon-arrow-left"></use>
           </svg>
         </button>
-        <button type="button" class="rewiews-button-next">
+        <button type="button" class="rewiews-button-next" aria-label="Swipe to the next slide">
           <svg class="rewiews-button-icon">
             <use href="/js-project-team-07/assets/icons-ad714d05.svg#icon-arrow-right"></use>
           </svg>
@@ -974,14 +898,18 @@
     </main>
 
     <!-- Footer -->
-      <section class="section footer-section animated-element animation-scale" id="work-together">
+      <section
+  class="section footer-section animated-element animation-scale"
+  id="work-together"
+>
   <div class="container footer-container">
     <div class="footer-wrapper">
       <img
         class="footer-image"
-        srcset="data:image/webp;base64,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 1x, /js-project-team-07/assets/logo_photo_2x-3070a29a.webp 2x"
-        src="../img/logo_photo/logo_photo_1x.webp"
+        src="data:image/webp;base64,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"
+        srcset="/js-project-team-07/assets/logo_photo_2x-3070a29a.webp 2x"
         alt="Jefferson`s photo"
+        loading="lazy"
       />
       <h2 class="footer-title">
         <span class="footer-title-elem">Let’s</span>
@@ -1013,10 +941,10 @@
 
     <address class="footer-adress">
       <a class="footer-adress-email" href="mailto:lloydjefferson@gmail.com"
-        >lloydjefferson@gmail.com</a
+        aria-label="contact email">lloydjefferson@gmail.com</a
       >
       <a class="footer-adress-tel" href="tel:+3801111111111"
-        >+380 11 1111 11 11</a
+        aria-label="contact phone number">+380 11 1111 11 11</a
       >
     </address>
   </div>
@@ -1026,7 +954,7 @@
   <div class="modal-window">
     <h3 class="modal-window-header"></h3>
     <p class="modal-window-text"></p>
-    <button class="modal-close-btn" type="button">
+    <button class="modal-close-btn" type="button" aria-label="Modal window close">
       <svg class="modal-close-btn-img" width="22" height="22">
         <use href="/js-project-team-07/assets/icons-ad714d05.svg#icon-close"></use>
       </svg>
