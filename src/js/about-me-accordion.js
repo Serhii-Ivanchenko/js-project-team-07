@@ -1,5 +1,5 @@
-import { createAccordion, handleClick } from './accordion';
-import { accordionList } from './refs';
+import { createAccordion, handleAccordionClick } from './accordion';
+import { aboutmeAccordion } from './refs';
 
 const options = {
   containerClass: '.aboutme-accordion-container',
@@ -14,8 +14,16 @@ const clickOptions = {
   iconClass: '.aboutme-item-icon',
 };
 
-accordionList.addEventListener('click', event =>
-  handleClick(event, clickOptions)
+// aboutmeAccordion.addEventListener('click', event => {
+//   handleAccordionClick(event, clickOptions);
+// });
+const aboutmeAccordionTriggers = aboutmeAccordion.querySelectorAll(
+  '.aboutme-accordion-trigger'
 );
+aboutmeAccordionTriggers.forEach(accordionTrigger => {
+  accordionTrigger.addEventListener('click', event => {
+    handleAccordionClick(event, clickOptions);
+  });
+});
 
 createAccordion(options);

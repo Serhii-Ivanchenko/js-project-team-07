@@ -1,5 +1,5 @@
 // About-me Accordion
-const accordionList = document.querySelector('.accordion-container');
+const aboutmeAccordion = document.querySelector('.aboutme-accordion-container');
 // About-me Swiper
 const nextSlideBtn = document.querySelector('.aboutme-slide-next');
 // Benefits
@@ -8,7 +8,7 @@ const benefitsList = benefitsBody.querySelector('.benefits-list');
 const benefitsClose = benefitsBody.querySelector('.close-benefits-btn');
 const benefitsIcon = benefitsBody.querySelector('.close-benefits-icon');
 // FAQ Accordion
-const accordionListFaq = document.querySelector('.faq-items');
+const faqAccordion = document.querySelector('.faq-items');
 // Header & Mobile menu
 const menu = document.querySelector('.menu-title');
 const menuList = document.querySelector('.menu-list');
@@ -31,13 +31,13 @@ const modalCloseBtn = document.querySelector('.modal-close-btn');
 const modalCloseBtnImg = document.querySelector('.modal-close-btn-img');
 
 export {
-  accordionList,
+  aboutmeAccordion,
   nextSlideBtn,
   benefitsBody,
   benefitsClose,
   benefitsIcon,
   benefitsList,
-  accordionListFaq,
+  faqAccordion,
   menu,
   menuList,
   openBtn,
