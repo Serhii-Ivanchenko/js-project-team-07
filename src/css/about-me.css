@@ -207,6 +207,16 @@
   min-width: 0;
 }
 
+.swiper-wrapper.aboutme-swiper-wrapper.animated-element.animation-left {
+  transform: translateX(1000px);
+  transition: opacity 3s, transform 3s;
+}
+
+.swiper-wrapper.aboutme-swiper-wrapper.animated-element.animation-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .aboutme-swiper {
   display: flex;
   justify-content: space-between;

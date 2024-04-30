@@ -76,6 +76,12 @@
     text-transform: uppercase;
 }
 
+.animated-element.animation-scale.hero-name {
+    opacity: 0;
+        transform: scale(0);
+        transition: opacity 2s, transform 2s;
+}
+
 @media only screen and (min-width: 768px) {
     .hero-name {
         max-width: 632px;

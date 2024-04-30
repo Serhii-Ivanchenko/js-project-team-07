@@ -7,6 +7,7 @@ import './js/header.js';
 import './js/projects.js';
 import './js/reviews.js';
 import './js/swagger-api.js';
-import './js/swiper.js';
+// import './js/swiper.js';
 import './js/work-together.js';
 import './js/scroll-to-top.js'
+import './js/animations.js'
