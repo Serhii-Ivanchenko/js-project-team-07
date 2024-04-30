@@ -2,7 +2,7 @@
   <div class="container aboutme-container">
     <h2 class="visually-hidden">About me</h2>
     <ul class="aboutme-header">
-      <li class="aboutme-header-item">
+      <li class="aboutme-header-item animated-element animation-scale">
         <h3 class="aboutme-header-title">
           I work with people all over the world to create impressive and
           <span class="accent">functional </span>
@@ -10,7 +10,7 @@
           each client's unique personality.
         </h3>
       </li>
-      <li class="aboutme-header-item thumb">
+      <li class="aboutme-header-item thumb animated-element animation-scale">
         <picture>
           <source
             media="(min-width: 768px)"
@@ -42,8 +42,8 @@
       <li class="aboutme-item">
         <h3 class="aboutme-item-header aboutme-ac-trigger">
           About me
-          <button type="button">
-            <svg class="aboutme-item-btn">
+          <button class="aboutme-accordion-btn" type="button">
+            <svg class="aboutme-item-btn" width="20px" height="20px">
               <use href="./img/icons.svg#icon-arrow-up"></use>
             </svg>
           </button>
@@ -77,8 +77,8 @@
       <li class="aboutme-item">
         <h3 class="aboutme-item-header aboutme-ac-trigger">
           Role
-          <button type="button">
-            <svg class="aboutme-item-btn">
+          <button class="aboutme-accordion-btn" type="button">
+            <svg class="aboutme-item-btn" width="20px" height="20px">
               <use href="./img/icons.svg#icon-arrow-down"></use>
             </svg>
           </button>
@@ -94,8 +94,8 @@
       <li class="ac aboutme-item">
         <h3 class="aboutme-item-header aboutme-ac-trigger">
           Education
-          <button type="button">
-            <svg class="aboutme-item-btn">
+          <button class="aboutme-accordion-btn" type="button">
+            <svg class="aboutme-item-btn" width="20px" height="20px">
               <use href="./img/icons.svg#icon-arrow-down"></use>
             </svg>
           </button>
@@ -118,7 +118,7 @@
 
     <div class="aboutme-swiper-container">
       <div class="aboutme-swiper">
-        <ul class="swiper-wrapper aboutme-swiper-wrapper">
+        <ul class="swiper-wrapper aboutme-swiper-wrapper animated-element animation-left">
           <li class="swiper-slide aboutme-swiper-slide">
             <div class="aboutme-slide">HTML/CSS</div>
           </li>
