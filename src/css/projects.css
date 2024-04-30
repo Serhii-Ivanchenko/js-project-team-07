@@ -113,12 +113,13 @@
   background: #ed3b44;
   color: #fafafa;
   letter-spacing: -0.02em;
-  transition: background-color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out, transform 300ms ease-in-out;
 }
 
 .projects-slide-link:hover,
 .projects-slide-link:focus {
   background-color: #e0373f;
+  transform: scale(1.1);
 }
 
 @media only screen and (min-width: 768px) {

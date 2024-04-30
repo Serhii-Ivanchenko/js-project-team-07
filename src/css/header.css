@@ -45,8 +45,9 @@
 }
 
 
-.menu,
-.order-project-btn {
+.menu, .order-project-link
+
+{
   display: none;
   transition: transform 300ms ease-in-out;
 }
@@ -106,9 +107,9 @@ transform: scale(1.2);
     transform: scale(1.2);
   }
 
-  .order-project-btn {
+  /* .order-project-btn {
     display: flex;
-  }
+  } */
 
   .order-project-link {
     min-width: 163px;
@@ -125,12 +126,13 @@ transform: scale(1.2);
     font-weight: 500;
     line-height: normal;
     letter-spacing: -0.02em;
-    transition: background-color 300ms ease-in-out;
+    transition: background-color 300ms ease-in-out, transform 300ms ease-in-out;
   }
 
   .order-project-link:hover,
   .order-project-link:focus {
     background-color: #E0373F;
+    transform: scale(1.1);
   }
 }
 
