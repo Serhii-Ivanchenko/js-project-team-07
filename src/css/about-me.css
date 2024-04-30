@@ -93,14 +93,14 @@
   }
 }
 
-.accordion-container {
+.aboutme-accordion-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
 @media only screen and (min-width: 768px) {
-  .accordion-container {
+  .aboutme-accordion-container {
     gap: 32px;
   }
 }
@@ -150,13 +150,13 @@
   transform: scale(1.1);
 }
 
-.aboutme-item-btn {
+.aboutme-item-icon {
   fill: none;
   stroke: white;
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.aboutme-item-panel {
+.aboutme-accordion-panel {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -165,7 +165,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .aboutme-item-panel {
+  .aboutme-accordion-panel {
     gap: 16px;
     margin-top: 8px;
     margin-bottom: 32px;
@@ -173,12 +173,12 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .aboutme-item-panel {
+  .aboutme-accordion-panel {
     gap: 32px;
   }
 }
 
-.aboutme-role-education-list {
+.aboutme-item-list {
   gap: 10px;
 }
 
@@ -279,10 +279,6 @@
     /* margin-right: 64px; */
   }
 
-  .aboutme-swiper-wrapper {
-    /* width: 600px; */
-  }
-
   .aboutme-slide {
     width: 200px;
     height: 200px;
@@ -296,39 +292,29 @@
 }
 
 @media only screen and (min-width: 1440px) {
+  .aboutme-swiper-container {
+    width: 1312px;
+  }
   /* .swiper, */
   .aboutme-swiper {
     width: 1200px;
     /* margin-right: 72px; */
   }
-
-  .aboutme-swiper-wrapper {
-    /* width: 1200px; */
-  }
 }
-
-/* .swiper {
-  width: 1312px;
-  height: 200px;
-} */
-.swiper-button-lock {
-  display: flex !important;
-}
-*/
-
 /* #endregion: facking.SWIPER -------------------- */
 
 /* #region: accordion --------------------*/
-.aboutme-item.js-enabled .aboutme-item-panel {
+.aboutme-accordion-item.js-enabled .aboutme-accordion-panel {
   visibility: hidden;
 }
 
-.aboutme-item.is-active .aboutme-item-panel {
+.aboutme-accordion-item.is-active .aboutme-accordion-panel {
   visibility: visible;
 }
 
-.aboutme-item .aboutme-item-panel {
+.aboutme-accordion-item .aboutme-accordion-panel {
   overflow: hidden;
   transition-property: height, visibility;
   transition-timing-function: ease;
 }
+/* #endregion: accordion --------------------*/
