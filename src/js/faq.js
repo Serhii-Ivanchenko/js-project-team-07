@@ -1,6 +1,5 @@
 import { createAccordion, handleClick } from './accordion';
-
-const accordionList = document.querySelector('.faq-items');
+import { accordionListFaq } from './refs';
 
 const options = {
   containerClass: '.faq-items',
@@ -15,7 +14,7 @@ const clickOptions = {
 };
 
 
-accordionList.addEventListener('click', event =>
+accordionListFaq.addEventListener('click', event =>
   handleClick(event, clickOptions)
 );
 

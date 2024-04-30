@@ -1,10 +1,10 @@
 import { initSwiper } from './swiper';
 import { getData } from './swagger-api';
+import { reviewsListEl, reviewsSection } from './refs';
+
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
-const reviewsListEl = document.querySelector('.reviews-list');
-const reviewsSection = document.querySelector('.reviews-section');
 
 let reviewsLoaded = false;
 
