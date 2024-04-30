@@ -48,6 +48,12 @@
 .menu,
 .order-project-btn {
   display: none;
+  transition: transform 300ms ease-in-out;
+}
+
+.menu-title:hover,
+.menu-title:focus {
+transform: scale(1.2);
 }
 
 @media only screen and (min-width: 768px) {
@@ -90,13 +96,14 @@
     line-height: normal;
     letter-spacing: -0.02em;
     border-bottom: 2px solid transparent;
-    transition: color 300ms ease-in-out, border 300ms ease-in-out;
+    transition: color 300ms ease-in-out, border 300ms ease-in-out, transform 300ms ease-in-out;
   }
 
   .menu-list-item:hover,
   .menu-list-item:focus {
     color: #ED3B44;
     border-bottom: 2px solid;
+    transform: scale(1.2);
   }
 
   .order-project-btn {

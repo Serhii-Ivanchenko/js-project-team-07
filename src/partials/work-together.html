@@ -1,14 +1,15 @@
-<section class="section footer-section animated-element animation-scale" id="work-together">
+<section
+  class="section footer-section animated-element animation-scale"
+  id="work-together"
+>
   <div class="container footer-container">
     <div class="footer-wrapper">
       <img
         class="footer-image"
-        srcset="
-          ./img/logo_photo/logo_photo_1x.webp 1x,
-          ./img/logo_photo/logo_photo_2x.webp 2x
-        "
-        src="../img/logo_photo/logo_photo_1x.webp"
+        src="./img/logo_photo/logo_photo_1x.webp"
+        srcset="./img/logo_photo/logo_photo_2x.webp 2x"
         alt="Jefferson`s photo"
+        loading="lazy"
       />
       <h2 class="footer-title">
         <span class="footer-title-elem">Let’s</span>
@@ -40,10 +41,10 @@
 
     <address class="footer-adress">
       <a class="footer-adress-email" href="mailto:lloydjefferson@gmail.com"
-        >lloydjefferson@gmail.com</a
+        aria-label="contact email">lloydjefferson@gmail.com</a
       >
       <a class="footer-adress-tel" href="tel:+3801111111111"
-        >+380 11 1111 11 11</a
+        aria-label="contact phone number">+380 11 1111 11 11</a
       >
     </address>
   </div>
@@ -53,7 +54,7 @@
   <div class="modal-window">
     <h3 class="modal-window-header"></h3>
     <p class="modal-window-text"></p>
-    <button class="modal-close-btn" type="button">
+    <button class="modal-close-btn" type="button" aria-label="Modal window close">
       <svg class="modal-close-btn-img" width="22" height="22">
         <use href="./img/icons.svg#icon-close"></use>
       </svg>

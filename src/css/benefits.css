@@ -128,7 +128,7 @@
     cursor: pointer;
 }
 
-.benefits-link-box {
+.benefits-link {
     display: flex;
     width: 187px;
     height: 55px;
@@ -142,8 +142,8 @@
     transition: border 300ms ease-in-out, transform 300ms ease-in-out;
 }
 
-.benefits-link-box:hover,
-.benefits-link-box:focus {
+.benefits-link:hover,
+.benefits-link:focus {
     border: 1px solid #FAFAFA;
 }
 
