@@ -16,20 +16,26 @@ function createAccordion({
     showMultiple: true,
     openOnInit: openOnInit,
     duration: duration,
-    beforeOpen: currentElement => {
-      const useElement = currentElement.querySelector('use');
-      useElement.setAttribute(
-        'href',
-        '/js-project-team-07/assets/icons-ad714d05.svg#icon-arrow-up'
-      );
-    },
-    beforeClose: currentElement => {
-      const useElement = currentElement.querySelector('use');
-      useElement.setAttribute(
-        'href',
-        '/js-project-team-07/assets/icons-ad714d05.svg#icon-arrow-down'
-      );
-    },
+    // beforeOpen: currentElement => {
+    //   const useElement = currentElement.querySelector('use');
+    //   useElement.setAttribute(
+    //     'href',
+    //     '/js-project-team-07/assets/icons-ad714d05.svg#icon-arrow-up'
+    //   );
+    // },
+    // beforeClose: currentElement => {
+    //   const useElement = currentElement.querySelector('use');
+    //   useElement.setAttribute(
+    //     'href',
+    //     '/js-project-team-07/assets/icons-ad714d05.svg#icon-arrow-down'
+    //   );
+    // },
+    // beforeOpen: event => {
+    //   event.target.style.transform = 'rotate(180deg)';
+    // },
+    // beforeClose: event => {
+    //   event.target.style.transform = 'rotate(0deg)';
+    // },
   });
 }
 
