@@ -14,12 +14,10 @@ const clickOptions = {
   iconClass: '.aboutme-item-icon',
 };
 
-// aboutmeAccordion.addEventListener('click', event => {
-//   handleAccordionClick(event, clickOptions);
-// });
 const aboutmeAccordionTriggers = aboutmeAccordion.querySelectorAll(
   '.aboutme-accordion-trigger'
 );
+
 aboutmeAccordionTriggers.forEach(accordionTrigger => {
   accordionTrigger.addEventListener('click', event => {
     handleAccordionClick(event, clickOptions);
