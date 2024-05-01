@@ -18,11 +18,13 @@ function createAccordion({
   });
 }
 
-function handleClick(event, { btnClass, iconClass }) {
-  const arrowBtn = event.target.closest(btnClass);
+function handleAccordionClick(event, { btnClass, iconClass }) {
+  const arrowBtn =
+    event.currentTarget.querySelector(btnClass) ||
+    event.target.closest(btnClass);
+  const arrowIcon = event.currentTarget.querySelector(iconClass);
   if (!arrowBtn) return;
 
-  const arrowIcon = arrowBtn.querySelector(iconClass);
   const isRotated = arrowBtn.classList.contains('rotated');
 
   if (isRotated) {
@@ -34,4 +36,4 @@ function handleClick(event, { btnClass, iconClass }) {
   }
 }
 
-export { createAccordion, handleClick };
+export { createAccordion, handleAccordionClick };

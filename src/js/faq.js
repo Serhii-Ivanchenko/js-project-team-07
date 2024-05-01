@@ -1,5 +1,5 @@
-import { createAccordion, handleClick } from './accordion';
-import { accordionListFaq } from './refs';
+import { createAccordion, handleAccordionClick } from './accordion';
+import { faqAccordion } from './refs';
 
 const options = {
   containerClass: '.faq-items',
@@ -13,9 +13,11 @@ const clickOptions = {
   iconClass: '.modal-btn-icon',
 };
 
-
-accordionListFaq.addEventListener('click', event =>
-  handleClick(event, clickOptions)
-);
+const faqAccordionTriggers = faqAccordion.querySelectorAll('.faq-acordeon-btn');
+faqAccordionTriggers.forEach(accordionTrigger => {
+  accordionTrigger.addEventListener('click', event => {
+    handleAccordionClick(event, clickOptions);
+  });
+});
 
 createAccordion(options);

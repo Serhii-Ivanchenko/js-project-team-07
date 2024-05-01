@@ -93,14 +93,14 @@
   }
 }
 
-.accordion-container {
+.aboutme-accordion-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
 @media only screen and (min-width: 768px) {
-  .accordion-container {
+  .aboutme-accordion-container {
     gap: 32px;
   }
 }
@@ -150,13 +150,13 @@
   transform: scale(1.1);
 }
 
-.aboutme-item-btn {
+.aboutme-item-icon {
   fill: none;
   stroke: white;
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.aboutme-item-panel {
+.aboutme-accordion-panel {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -165,7 +165,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .aboutme-item-panel {
+  .aboutme-accordion-panel {
     gap: 16px;
     margin-top: 8px;
     margin-bottom: 32px;
@@ -173,12 +173,12 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .aboutme-item-panel {
+  .aboutme-accordion-panel {
     gap: 32px;
   }
 }
 
-.aboutme-role-education-list {
+.aboutme-item-list {
   gap: 10px;
 }
 
@@ -198,6 +198,7 @@
 }
 
 /* SWIPER */
+/* #region: Swiper -----------------------*/
 .aboutme-swiper-container {
   display: flex;
   align-items: center;
@@ -224,7 +225,6 @@
   overflow: hidden;
   width: 260px;
   min-width: 0;
-  margin-right: 55px;
 }
 
 .aboutme-swiper-wrapper {
@@ -254,7 +254,7 @@
   letter-spacing: -0.02em;
 }
 
-.swiper-slide-active>.aboutme-slide {
+.swiper-slide-active > .aboutme-slide {
   background-color: #ed3b44;
 }
 
@@ -268,12 +268,10 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .aboutme-swiper {
-    width: 600px;
-    margin-right: 64px;
+  .aboutme-swiper-container {
+    width: 704px;
   }
-
-  .aboutme-swiper-wrapper {
+  .aboutme-swiper {
     width: 600px;
   }
 
@@ -290,31 +288,28 @@
 }
 
 @media only screen and (min-width: 1440px) {
+  .aboutme-swiper-container {
+    width: 1312px;
+  }
+
   .aboutme-swiper {
     width: 1200px;
-    margin-right: 72px;
-  }
-
-  .aboutme-swiper-wrapper {
-    width: 1200px;
   }
 }
+/* #endregion: SWIPER -------------------- */
 
-.swiper-button-lock {
-  display: flex !important;
-}
-
-/* accordion */
-.aboutme-item.js-enabled .aboutme-item-panel {
+/* #region: accordion --------------------*/
+.aboutme-accordion-item.js-enabled .aboutme-accordion-panel {
   visibility: hidden;
 }
 
-.aboutme-item.is-active .aboutme-item-panel {
+.aboutme-accordion-item.is-active .aboutme-accordion-panel {
   visibility: visible;
 }
 
-.aboutme-item .aboutme-item-panel {
+.aboutme-accordion-item .aboutme-accordion-panel {
   overflow: hidden;
   transition-property: height, visibility;
   transition-timing-function: ease;
 }
+/* #endregion: accordion --------------------*/
