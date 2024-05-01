@@ -254,13 +254,13 @@
     width: 40px;
     height: 40px;
   }
-}
 
-@media only screen and (min-width: 768px) {
   .scroll-up-btn {
     right: 20px;
   }
 }
+
+@media only screen and (min-width: 768px) {}
 
 @media only screen and (min-width: 1280px) {
   .scroll-up-btn {
@@ -292,11 +292,12 @@
     height: 50px;
   }
 
-    .scroll-up-btn {
-      border-radius: 50%;
-      border: 2px solid #ED3B44;
-    }
+  .scroll-up-btn {
+    border-radius: 50%;
+    border: 2px solid #ED3B44;
+  }
 }
+
 .scroll-up-icon {
   fill: none;
   stroke: currentColor;
@@ -307,4 +308,10 @@
   color: rgba(250, 250, 250, 1);
   border: 2px solid rgba(250, 250, 250, 1);
   border-radius: 50%;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .scroll-up-btn:hover {
+    right: 0;
+  }
 }
