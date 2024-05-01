@@ -22,7 +22,10 @@ const reviewsSection = document.querySelector('.reviews-section');
 const scrollToTopBtn = document.querySelector('.scroll-up-btn');
 // Work together (footer)
 const footerEmailInput = document.querySelector('.footer-input-email');
+const footerCommentInput = document.querySelector('.footer-input-comments');
 const footerInputErrorMsg = document.querySelector('.input-error-message');
+const footerCommentErrorMsg = document.querySelector('.comment-error-message');
+const footerSendBtn = document.querySelector('.footer-btn');
 const form = document.querySelector('.footer-form');
 const footerBackdrop = document.querySelector('.footer-backdrop');
 const modalWindowHeader = document.querySelector('.modal-window-header');
@@ -47,7 +50,10 @@ export {
   reviewsSection,
   scrollToTopBtn,
   footerEmailInput,
+  footerCommentInput,
   footerInputErrorMsg,
+  footerCommentErrorMsg,
+  footerSendBtn,
   form,
   footerBackdrop,
   modalWindowHeader,

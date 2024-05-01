@@ -40,6 +40,7 @@
         height: 1024px;
         padding-top: 32px;
         padding-bottom: 32px;
+        background-size: 50% 100%;
     }
 }
 
@@ -49,18 +50,38 @@
     }
 }
 
+@media only screen and (min-width: 1148px) {
+    .hero-section {
+    background-size: 50% 100%;
+    }
+}
+
 @media only screen and (min-width: 1440px) {
     .hero-section {
         background-image: url(../img/hero/hero_bg_desktop_1x.webp);
         padding-bottom: 32px;
         padding-top: 32px;
         height: 900px;
+        background-size: contain;
     }
 }
+
 
 @media only screen and (min-width: 1440px) and (min-resolution: 192dpi) {
     .hero-section {
         background-image: url(../img/hero/hero_bg_desktop_2x.webp);
+    }
+}
+
+@media only screen and (min-width: 1441px) {
+    .hero-section  {
+        background-size: 50% 100%;
+    }
+}
+
+@media only screen and (min-width: 2048px) {
+    .hero-section {
+        background-image: url(../img/hero/hero_bg_desktop_3x.webp);
     }
 }
 
@@ -78,8 +99,8 @@
 
 .animated-element.animation-scale.hero-name {
     opacity: 0;
-        transform: scale(0);
-        transition: opacity 2s, transform 2s;
+    transform: scale(0);
+    transition: opacity 2s, transform 2s;
 }
 
 @media only screen and (min-width: 768px) {

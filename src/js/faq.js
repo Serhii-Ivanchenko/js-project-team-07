@@ -4,7 +4,7 @@ import { faqAccordion } from './refs';
 const options = {
   containerClass: '.faq-items',
   elementClass: 'faq-item',
-  triggerClass: 'faq-acordeon-btn',
+  triggerClass: 'faq-title',
   panelClass: 'faq-descr',
 };
 
@@ -13,7 +13,8 @@ const clickOptions = {
   iconClass: '.modal-btn-icon',
 };
 
-const faqAccordionTriggers = faqAccordion.querySelectorAll('.faq-acordeon-btn');
+const faqAccordionTriggers = faqAccordion.querySelectorAll('.faq-title');
+
 faqAccordionTriggers.forEach(accordionTrigger => {
   accordionTrigger.addEventListener('click', event => {
     handleAccordionClick(event, clickOptions);

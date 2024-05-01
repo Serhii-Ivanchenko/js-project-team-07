@@ -79,6 +79,7 @@
     flex-direction: row;
     gap: 32px;
     margin-bottom: 18px;
+    align-items: baseline;
   }
 }
 
@@ -90,7 +91,7 @@
 
 .footer-form-wrapper {
   width: 100%;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
   display: flex;
   flex-direction: column;
 }
@@ -98,7 +99,7 @@
 @media screen and (min-width: 768px) {
   .footer-form-wrapper {
     margin-bottom: 0;
-    margin-top: 46px;
+    /* margin-top: 46px; */
   }
 }
 
@@ -146,12 +147,6 @@
   .footer-input-comments {
     width: 245px;
     height: 44px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer-input-comments {
-    margin-top: 46px;
   }
 }
 

@@ -1,7 +1,10 @@
 import { postData } from './swagger-api';
 import {
   footerEmailInput,
+  footerCommentInput,
   footerInputErrorMsg,
+  footerCommentErrorMsg,
+  footerSendBtn,
   form,
   footerBackdrop,
   modalWindowHeader,
@@ -11,6 +14,7 @@ import {
 } from './refs';
 
 footerEmailInput.addEventListener('input', onFooterEmailInput);
+footerCommentInput.addEventListener('input', onFooterCommentInput);
 form.addEventListener('input', onFormInput);
 form.addEventListener('submit', onFormSubmit);
 footerBackdrop.addEventListener('click', opBackdropClick);
@@ -38,6 +42,18 @@ function onFooterEmailInput() {
   }
 }
 
+function onFooterCommentInput() {
+  if (footerCommentInput.value.trim().length <= 0) {
+    footerCommentInput.style.borderBottomColor = '#E74A3B';
+    footerCommentErrorMsg.style.color = '#E74A3B';
+    footerCommentErrorMsg.textContent = 'Please, fill the field';
+  } else {
+    footerCommentInput.style.borderBottomColor = '#3CBC81';
+    footerCommentErrorMsg.style.color = '#3CBC81';
+    footerCommentErrorMsg.textContent = 'Success!';
+  }
+}
+
 function onFormInput(evt) {
   const userEmail = evt.currentTarget.elements.email.value.trim();
   const userComments = evt.currentTarget.elements.comments.value.trim();
@@ -47,12 +63,30 @@ function onFormInput(evt) {
     comment: userComments,
   };
 
+  if (
+    userInput.comment !== '' &&
+    document.activeElement === footerCommentInput
+  ) {
+    footerSendBtn.disabled = false;
+    footerSendBtn.style.backgroundColor = '';
+  } else {
+    if (
+      document.activeElement === footerEmailInput &&
+      footerEmailInput.validity.valid
+    ) {
+      footerSendBtn.disabled = false;
+      footerSendBtn.style.backgroundColor = '';
+    } else {
+      footerSendBtn.disabled = true;
+      footerSendBtn.style.backgroundColor = '#3B3B3B';
+    }
+  }
+
   localStorage.setItem('savedUserInput', JSON.stringify(userInput));
 }
 
 async function onFormSubmit(evt) {
   evt.preventDefault();
-
   const userInfo = JSON.parse(localStorage.getItem('savedUserInput'));
 
   try {
@@ -61,6 +95,12 @@ async function onFormSubmit(evt) {
     modalWindowHeader.textContent = response.title;
     modalWindowText.textContent = response.message;
     form.reset();
+
+    footerEmailInput.style.borderBottomColor = '';
+    footerInputErrorMsg.textContent = '';
+    footerCommentInput.style.borderBottomColor = '';
+    footerCommentErrorMsg.textContent = '';
+
     localStorage.removeItem('savedUserInput');
   } catch (error) {
     openBackdrop();
