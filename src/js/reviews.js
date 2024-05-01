@@ -71,9 +71,6 @@ async function searchReviews() {
         });
       } else {
         reviewsListEl.insertAdjacentHTML('beforeend', createMarkup(response));
-
-
-
       }
     } catch (error) {
       reviewsListEl.innerHTML = createError();

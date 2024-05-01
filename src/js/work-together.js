@@ -81,7 +81,6 @@ function onFormInput(evt) {
       footerSendBtn.style.backgroundColor = '#3B3B3B';
     }
   }
-
   localStorage.setItem('savedUserInput', JSON.stringify(userInput));
 }
 
