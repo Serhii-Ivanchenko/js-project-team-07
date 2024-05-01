@@ -11,9 +11,9 @@
     />
     
     <script type="module" crossorigin src="/js-project-team-07/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/js-project-team-07/assets/vendor-694db2ec.js">
+    <link rel="modulepreload" crossorigin href="/js-project-team-07/assets/vendor-fae2d5a0.js">
     <link rel="stylesheet" href="/js-project-team-07/assets/vendor-32f6f024.css">
-    <link rel="stylesheet" href="/js-project-team-07/assets/index-a481da23.css">
+    <link rel="stylesheet" href="/js-project-team-07/assets/index-72c1f772.css">
   </head>
   <body>
     <!-- header -->
@@ -178,18 +178,22 @@
       </li>
     </ul>
 
-    <ul class="accordion-container">
-      <li class="aboutme-item">
-        <h3 class="aboutme-item-header aboutme-ac-trigger">
+    <ul class="aboutme-accordion-container">
+      <li class="aboutme-accordion-item">
+        <h3 class="aboutme-accordion-trigger aboutme-item-header">
           About me
-          <button class="aboutme-accordion-btn" type="button" aria-label="Open about-me information">
-            <svg class="aboutme-item-btn" width="20px" height="20px">
+          <button
+            type="button"
+            class="aboutme-accordion-btn"
+            aria-label="Open about-me information"
+          >
+            <svg class="aboutme-item-icon" width="20px" height="20px">
               <use href="/js-project-team-07/assets/icons-ad714d05.svg#icon-arrow-up"></use>
             </svg>
           </button>
         </h3>
 
-        <div class="aboutme-item-panel">
+        <div class="aboutme-accordion-panel">
           <p class="aboutme-item-text">
             I am Lloyd Jefferson, a talented programmer with extensive expertise
             in software development. I have an understanding of different
@@ -214,34 +218,42 @@
         </div>
       </li>
 
-      <li class="aboutme-item">
-        <h3 class="aboutme-item-header aboutme-ac-trigger">
+      <li class="aboutme-accordion-item">
+        <h3 class="aboutme-accordion-trigger aboutme-item-header">
           Role
-          <button class="aboutme-accordion-btn" type="button" aria-label="Open roles information">
-            <svg class="aboutme-item-btn" width="20px" height="20px">
+          <button
+            type="button"
+            class="aboutme-accordion-btn"
+            aria-label="Open roles information"
+          >
+            <svg class="aboutme-item-icon" width="20px" height="20px">
               <use href="/js-project-team-07/assets/icons-ad714d05.svg#icon-arrow-down"></use>
             </svg>
           </button>
         </h3>
 
-        <ul class="aboutme-item-panel aboutme-role-education-list">
+        <ul class="aboutme-accordion-panel aboutme-item-list">
           <li class="aboutme-item-text">Frontend development</li>
           <li class="aboutme-item-text">HeadlessCMS,Wordpress</li>
           <li class="aboutme-item-text">Blender(enjoy)</li>
         </ul>
       </li>
 
-      <li class="ac aboutme-item">
-        <h3 class="aboutme-item-header aboutme-ac-trigger">
+      <li class="aboutme-accordion-item">
+        <h3 class="aboutme-accordion-trigger aboutme-item-header">
           Education
-          <button class="aboutme-accordion-btn" type="button" aria-label="Open Education information">
-            <svg class="aboutme-item-btn" width="20px" height="20px">
+          <button
+            type="button"
+            class="aboutme-accordion-btn"
+            aria-label="Open Education information"
+          >
+            <svg class="aboutme-item-icon" width="20px" height="20px">
               <use href="/js-project-team-07/assets/icons-ad714d05.svg#icon-arrow-down"></use>
             </svg>
           </button>
         </h3>
 
-        <ul class="aboutme-item-panel aboutme-role-education-list">
+        <ul class="aboutme-accordion-panel aboutme-item-list">
           <li class="aboutme-item-text">
             2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
           </li>
@@ -258,7 +270,9 @@
 
     <div class="aboutme-swiper-container">
       <div class="aboutme-swiper">
-        <ul class="swiper-wrapper aboutme-swiper-wrapper animated-element animation-left">
+        <ul
+          class="swiper-wrapper aboutme-swiper-wrapper animated-element animation-left"
+        >
           <li class="swiper-slide aboutme-swiper-slide">
             <div class="aboutme-slide">HTML/CSS</div>
           </li>
@@ -277,6 +291,8 @@
           <li class="swiper-slide aboutme-swiper-slide">
             <div class="aboutme-slide">Soft skills</div>
           </li>
+
+          <!-- for infinity loop -->
           <li class="swiper-slide aboutme-swiper-slide">
             <div class="aboutme-slide">HTML/CSS</div>
           </li>
