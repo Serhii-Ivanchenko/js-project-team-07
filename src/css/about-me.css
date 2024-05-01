@@ -11,7 +11,7 @@
 }
 
 .aboutme-header-item {
-  width: 343px;
+  max-width: 343px;
   height: 500px;
   padding-top: 32px;
   padding-left: 32px;
@@ -46,7 +46,7 @@
   }
 
   .aboutme-header-item {
-    width: 704px;
+    max-width: 704px;
     height: 700px;
   }
 

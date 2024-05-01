@@ -235,8 +235,8 @@
   width: 40px;
   height: 40px;
   position: fixed;
-  bottom: 20px;
-  right: 0;
+  bottom: 30px;
+  right: -10px;
   z-index: 99;
   color: #ED3B44;
   cursor: pointer;
@@ -245,16 +245,58 @@
 
 @media only screen and (min-width: 768px) {
   .scroll-up-btn {
-    right: 34px;
+    right: 0px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .scroll-up-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .scroll-up-btn {
+    right: 20px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .scroll-up-btn {
-    right: 0;
+    right: 50px;
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  .scroll-up-btn {
+    right: -2px;
+  }
+}
+
+@media only screen and (min-width: 1460px) {
+  .scroll-up-btn {
+    right: 10px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .scroll-up-btn {
+    right: 20px;
+  }
+}
+
+@media only screen and (min-width: 1520px) {
+  .scroll-up-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+    .scroll-up-btn {
+      border-radius: 50%;
+      border: 2px solid #ED3B44;
+    }
+}
 .scroll-up-icon {
   fill: none;
   stroke: currentColor;
