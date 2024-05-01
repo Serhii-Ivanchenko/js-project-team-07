@@ -5,7 +5,7 @@
 }
 
 .faq-container {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .faq-item {
@@ -54,38 +54,52 @@
   font-weight: 600;
   line-height: 150%;
   letter-spacing: -0.02em;
-  max-width: 290px;
-  min-width: 208px;
-}
-
-
-
-@media only screen and (min-width: 768px) {
-  .faq-title {
-    max-width: 575px;
-  }
-
-  .fit {
-    min-width: 575px;
-  }
-
-  .fit-tablet {
-    width: 485px;
-  }
-}
-
-.title-items {
   margin-bottom: 16px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   cursor: pointer;
   border-radius: 12px;
   transition: background-color 300ms ease-in-out;
 }
 
-.fit {
-  width: 241px;
+.faq-title:hover {
+  background-color: #242527;
+}
+
+.fit-first-title {
+  width: 265px;
+}
+
+.fit-second-third-title {
+  width: 241px
+}
+
+.fit-fifth-title {
+  width: 208px;
+}
+
+.fit-last-title {
+  width: 289px;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .fit-first-title {
+    width: 100%;
+  }
+
+  .fit-second-third-title {
+    width: 100%
+  }
+
+  .fit-fifth-title {
+    width: 100%;
+  }
+
+  .fit-last-title {
+    width: 485px;
+  }
 }
 
 /* Descr */
