@@ -114,11 +114,14 @@ async function onFormSubmit(evt) {
 function openBackdrop() {
   window.addEventListener('keydown', onEscKeyPress);
   footerBackdrop.classList.add('backdrop-is-open');
+  //  document.body.style.height = '100%';
+  document.body.style.overflow = 'hidden';
 }
 
 function closeBackdrop() {
   window.removeEventListener('keydown', onEscKeyPress);
   footerBackdrop.classList.remove('backdrop-is-open');
+  document.body.style.overflow = '';
 }
 
 function opBackdropClick(event) {

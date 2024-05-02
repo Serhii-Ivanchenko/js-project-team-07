@@ -236,7 +236,7 @@
   height: 40px;
   position: fixed;
   bottom: 30px;
-  right: -10px;
+  right: 0px;
   z-index: 99;
   color: #ED3B44;
   cursor: pointer;
@@ -270,7 +270,7 @@
 
 @media only screen and (min-width: 1440px) {
   .scroll-up-btn {
-    right: -2px;
+    right: 0px;
   }
 }
 
