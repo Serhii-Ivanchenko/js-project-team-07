@@ -50,11 +50,6 @@
   transition: transform 300ms ease-in-out;
 }
 
-.menu-title:hover,
-.menu-title:focus {
-  transform: scale(1.2);
-}
-
 @media only screen and (min-width: 768px) {
   .menu {
     display: flex;
@@ -72,6 +67,11 @@
     letter-spacing: -0.02em;
 
     border-bottom: 2px solid #FAFAFA;
+    transition: transform 300ms ease-in-out;
+  }
+
+  .menu-title:hover {
+    transform: scale(1.2);
   }
 
   .menu-list {

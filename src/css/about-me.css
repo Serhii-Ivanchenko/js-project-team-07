@@ -145,8 +145,7 @@
   transition: transform 300ms ease-in-out;
 }
 
-.aboutme-accordion-btn:hover,
-.aboutme-accordion-btn:focus {
+.aboutme-accordion-btn:hover {
   border: 1px solid #fff;
   transform: scale(1.1);
 }

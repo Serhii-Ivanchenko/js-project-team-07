@@ -139,8 +139,7 @@
   transition: transform 300ms ease-in-out;
 }
 
-.faq-acordeon-btn:hover,
-.faq-acordeon-btn:focus {
+.faq-acordeon-btn:hover {
   border: 1px solid #fff;
   transform: scale(1.1);
 }

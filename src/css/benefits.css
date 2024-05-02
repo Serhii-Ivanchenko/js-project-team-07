@@ -113,9 +113,7 @@
 }
 
 .benefits-item:hover,
-.benefits-item:focus,
-.benefits-link-box:hover,
-.benefits-link-box:focus {
+.benefits-item:focus {
     /* Збільшуємо картку при наведенні або фокусі */
     transform: scale(1.05);
     cursor: pointer;
